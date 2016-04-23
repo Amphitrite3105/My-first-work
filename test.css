@@ -14,12 +14,23 @@ header{
     height: 100px;
     width: auto;
     background: white;
-    background: url(http://img.allo.ua/skin/frontend/enterprise/allov2/images/logo1.png) no-repeat -1% -15%;
+    background: url(http://img.allo.ua/skin/frontend/enterprise/allov2/images/logo1.png) no-repeat -1% -18%;
 }
 nav{
     margin: 0 auto;
 }
-
+.main-menu a{
+    padding: 1px 15px;
+}
+.reg a{
+    padding: 1px 5px;
+}
+.reg li:first-child{
+    padding-right: 10px;
+}
+.reg a{
+    padding-right: 0;
+}
 .main-menu a,
 .stuff a,
 .reg a {
@@ -82,7 +93,7 @@ nav{
 }
 .reg ul{
     list-style: none;
-    margin-left: 66px;
+    margin-left: 69px;
     margin-top: 4px;
     margin-bottom: 17px;
     letter-spacing: 0.01em;
@@ -100,14 +111,12 @@ nav{
     display: inline-block;
     font-size: 12px;
     border-right: 1px solid #dadada;
-    padding: 1px 15px;
+
 }
 .reg li:last-child{
     border: none;
 }
-.reg li{
-    padding: 1px 5px;
-}
+
 .reg li:first-child{
     margin-left: -35px;
 }
@@ -159,7 +168,7 @@ input[placeholder]{
     border-color: red;
 }
 .search .buttons a{
-    margin-top: -31px;
+    margin-top: -30px;
     margin-right: 15px;
     background: #e31837 ;
     color: white;
@@ -257,7 +266,8 @@ input[placeholder]{
     text-align: left;
     padding: 5px;
     width: 130px;
-    margin-left: 30px;
+    margin-left: 28px;
+    margin-top: -5px;
     font-size: 14px;
 }
 .about{
@@ -266,6 +276,7 @@ input[placeholder]{
     width: 100%;
     border-spacing: 10px 0;
     border-bottom: 1px solid #e0e0e0;
+    margin-top: -3px;
 }
 
 .about ul{
@@ -326,7 +337,7 @@ input[placeholder]{
 }
 .center .top{
     border-bottom: 1px solid #ebebeb;
-    width: 507px;
+    width: 490px;
     height: 167px;
 }
 .for-end{
@@ -406,7 +417,7 @@ input[placeholder]{
     border: 1px solid pink;
 }
 .top-1 p{
-    font-size: 
+    font-size: 12px;
 }
 .top-1 span:nth-child(2), .top-2 span:first-child{
     font-weight: bold;
@@ -425,7 +436,7 @@ input[placeholder]{
 .left{
     float: left;
     height: 565px;
-    width: 425px;
+    width: 440px;
     border: 2px solid green;
     background: url("https://pp.vk.me/c633925/v633925121/252f4/O99ZmWs_LAg.jpg") no-repeat 50% 0%;
 }
@@ -444,8 +455,7 @@ input[placeholder]{
 }
 .center{
     height: 565px;
-    width: 507px;
-    border: 2px solid yellow;
+    width: 490px;
     float: left;
     margin: auto;
 }
