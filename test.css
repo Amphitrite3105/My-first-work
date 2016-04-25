@@ -99,6 +99,7 @@ nav{
     letter-spacing: 0.01em;
 }
 .stuff ul{
+    width: 1200px;
     list-style: none;
     background: #ffffff;
     border: 1px solid #dadada;
@@ -310,6 +311,9 @@ input[placeholder]{
     font-weight: bold;
 }
 */
+.white{
+    background: #ffffff;
+}
 .right{
     background: #ffffff;
 }
@@ -430,6 +434,7 @@ input[placeholder]{
     height: 165px;
     border: 1px solid black;
 }
+
 .buy-1{
     text-decoration: none;
     padding: 12px 25px;
@@ -475,9 +480,59 @@ input[placeholder]{
     float: left;
     height: 565px;
     width: 440px;
-    border: 2px solid green;
+    border: 2px solid transparent;
+    background: #ffffff;
+}
+ /* Слайдер */
+.slider{
+    position: relative;
+    width: 350px;
+    padding-top: 290px;
+    margin-left: 75px;
+}
+.slider>img{
+    position: absolute;
+    top: -62px;
+    left: -150px;
+
+}
+.slider input[name="slide_switch"]{
+    display: none;
+}
+.slider label{
+    margin: 18px 0 0 7px;
+    border: 1px solid #ebebeb;
+    float: left;
+    cursor: pointer;
+}
+.slider label img{
+    display: block;
+    width: 65px;
+    height: 50px;
 }
 
+.slider input[name="slide_switch"]:checked + label{
+    border-color: #568da7;
+}
+
+.slider input[name="slide_switch"] ~ img{
+    transform: scale(0.71);
+}
+.video{
+    background: url("https://pp.vk.me/c633925/v633925121/25510/a6P5nyO-TVo.jpg") no-repeat 5% 10%;
+    width: 165px;
+    height: 30px;
+    margin: 35px auto auto 72px;
+    float: left;
+}
+.video a {
+    text-decoration: none;
+    color: #568da7;
+    border-bottom: 1px dashed #568da7;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 25px;
+}
 .stock{
     background: #f75b6d;
     color: white;
@@ -487,12 +542,13 @@ input[placeholder]{
     text-transform: uppercase;
     padding: 6px 10px;
     width: 45px;
-    margin: 257px auto auto 20px;
+    position: absolute;
+    margin: -33px auto auto 20px;
     font-weight: bold;
 }
 .center{
     height: 565px;
-    width: 490px;
+    width: 496px;
     float: left;
     margin: auto;
 }
@@ -507,6 +563,9 @@ input[placeholder]{
     color: #595959;
     font-size: 12px;
 }
+.city p{
+    margin-top: -4px;
+}
 .right a{
     text-decoration: none;
     color: #568da7;
@@ -514,7 +573,7 @@ input[placeholder]{
     cursor: pointer;
     float: right;
     font-size: 12px;
-    margin: -13px 25px auto auto;
+    margin: -14px 25px auto auto;
 }
 .right h2{
     font-size: 14px;
@@ -537,24 +596,24 @@ input[placeholder]{
     border-right-color: transparent;
     width: 0px;
     height: 0px;
-    margin: -8px 15px auto auto;
+    margin: -9px 15px auto auto;
 }
 .info h2 {
-    margin-left: 50px;
+    margin-left: 35px;
 }
 .delivery, .payment, .exchange{
     text-align: left;
 }
 .delivery{
-    margin-top: 20px;
+    margin-top: 24px;
     border-bottom: 1px solid #ebebeb;
 }
 .payment, .exchange{
-    margin-top: 15px;
+    margin-top: 17px;
 }
 .delivery p{
     margin: 15px 0 15px 0;
-    padding-left: 33px;
+    padding-left: 35px;
 }
 .icons{
     height: 270px;
@@ -563,10 +622,10 @@ input[placeholder]{
     margin-left: -5px;
     position: relative;
     z-index: 100;
-    background: url("https://pp.vk.me/c633925/v633925121/254ed/SyqBwD9Hpsw.jpg") no-repeat 50% 4%,
-                url("https://pp.vk.me/c633925/v633925121/254f4/zUNq_OBGoq0.jpg") no-repeat 50% 23%,
-                url("https://pp.vk.me/c633925/v633925121/254fb/a382rnkFHZo.jpg") no-repeat 50% 60%,
-                url("https://pp.vk.me/c633925/v633925121/25502/rMqbXxnBeZ8.jpg") no-repeat 50% 96%;
+    background: url("https://pp.vk.me/c633925/v633925121/254ed/SyqBwD9Hpsw.jpg") no-repeat 5% 4%,
+                url("https://pp.vk.me/c633925/v633925121/254f4/zUNq_OBGoq0.jpg") no-repeat 5% 24%,
+                url("https://pp.vk.me/c633925/v633925121/254fb/a382rnkFHZo.jpg") no-repeat 5% 61%,
+                url("https://pp.vk.me/c633925/v633925121/25502/rMqbXxnBeZ8.jpg") no-repeat 90% 98%;
 }
 
 .payment ul{
@@ -584,16 +643,16 @@ input[placeholder]{
     margin-bottom: 15px;
 }
 .exchange p{
-    padding-left: 33px;
+    padding-left: 35px;
 }
 .table{
     font-size: 13px;
     color: #595959;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 5px;
 }
 .table td:first-child{
-    background: url("https://pp.vk.me/c633925/v633925121/255c6/Ml26P5yXoVs.jpg") no-repeat 180% 50%;
+    background: url("https://pp.vk.me/c633925/v633925121/255c6/Ml26P5yXoVs.jpg") no-repeat 220% 50%;
     width: 15px;
 }
 table{
@@ -603,13 +662,15 @@ table{
     margin: 0;
     border-collapse: collapse;
 }
+
 table td{
     padding: 5px;
     text-align: left;
 }
+
 .table td:last-child{
     text-align: right;
-    padding-right: 18px;
+    padding-right: 23px;
 }
 .table td:nth-child(2){
     padding-right: 80px;
@@ -617,7 +678,7 @@ table td{
 .table th{
     font-feight: bold;
     padding: 10px;
-    padding-right: 115px;
+    padding-right: 120px;
     font-size: 14px;
     border-bottom: 2px solid #f9f9f9;
     background: #f9f9f9;
