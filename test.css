@@ -317,17 +317,55 @@ input[placeholder]{
     height: 25px;
     width: 350px;
     background: #ffffff;
-    padding-top: 15px;
+    padding-top: 10px;
     margin: 0 auto;
     border: 1px solid transparent;
-    background: url("https://pp.vk.me/c633925/v633925121/2578f/JOVwE9KU8CI.jpg") no-repeat 5% 80%;
-}
 
-.checkbox a,
+}
+.checkbox input[name="checkbox"]{
+    display: none;
+}
+.checkbox-off{
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    vertical-align: text-bottom;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    cursor: pointer;
+    background: transparent;
+    margin-top: 5px;
+    float: left;
+    margin-left: -10px;
+}
+.heart{
+    display: inline-block;
+    background: url("https://pp.vk.me/c633925/v633925121/2578f/JOVwE9KU8CI.jpg") no-repeat 10% 58%;
+    height: 11px;
+    width: 13px;
+    float: left;
+    margin-left: 27px;
+    margin-top: 5px;
+}
+.dis{
+    width: 150px;
+    float: left;
+}
+.check{
+    float: right;
+    width: 180px;
+}
+.checkbox a{
+    margin-top: 10px;
+    margin-left: -2px;
+}
 .checkbox input[type="checkbox"] + label{
+    margin-left: -40px;
+    margin-top: 5px;
+}
+.checkbox a, .checkbox input[type="checkbox"] + label{
     color: #568da7;
     text-decoration: none;
-    margin-right: 15px;
     border-bottom: 1px dashed #568da7;
     cursor: pointer;
     font-size: 12px;
@@ -438,7 +476,6 @@ input[placeholder]{
     height: 565px;
     width: 440px;
     border: 2px solid green;
-    background: url("https://pp.vk.me/c633925/v633925121/252f4/O99ZmWs_LAg.jpg") no-repeat 50% 0%;
 }
 
 .stock{
@@ -448,9 +485,9 @@ input[placeholder]{
     font-size: 12px;
     border-color: #f75b6d;
     text-transform: uppercase;
-    padding: 7px 10px;
+    padding: 6px 10px;
     width: 45px;
-    margin: 255px auto auto 15px;
+    margin: 257px auto auto 20px;
     font-weight: bold;
 }
 .center{
