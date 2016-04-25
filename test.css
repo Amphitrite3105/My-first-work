@@ -378,14 +378,13 @@ input[placeholder]{
     background: #ffffff;
 }
 .center .top{
-    border-bottom: 1px solid #ebebeb;
     width: 490px;
     height: 167px;
 }
 .for-end{
     width: 162px;
     height: 160px;
-    border: 1px solid transparent;
+    border-right: 1px solid #ebebeb;
     background: #f9f9f9;
     padding: 5px 7px 0px 7px;
     float: left;
@@ -395,15 +394,16 @@ input[placeholder]{
     font-size: 12px;
     color: #595959;
 }
-.for-end .time{
-    border-bottom: 1px solid #ebebeb;
-}
+
 .time p{
     color: #e31837;
     font-size: 24px;
     font-weight: bold;
     line-height: 1;
     padding-top: 5px;
+}
+.border-must{
+    border-bottom: 1px solid #ebebeb;
 }
 .time p:last-child{
     font-size: 11px;
@@ -430,9 +430,15 @@ input[placeholder]{
 }
 .price{
     float: right;
-    width: 325px;
+    width: 300px;
     height: 165px;
-    border: 1px solid black;
+    border-left: none;
+}
+.border{
+    border: 1px solid #ebebeb;
+    height: 167px;
+    width: 480px;
+    margin-top: 2px;
 }
 
 .buy-1{
@@ -442,40 +448,73 @@ input[placeholder]{
     color: #ffffff;
     font-weight: bold;
     font-size: 24px;
-    width: 140px;
+    width: 85px;
     border-radius: 7px;
+    margin: -4px 25px auto auto;
+    float: right;
 }
 
 .buy-2{
     text-decoration: none;
     font-size: 12px;
-    width: 140px;
+    width: 95px;
     color: #ffffff;
     background: #ef9529;
     border-radius: 3px;
-    padding: 8px 20px;
+    padding: 7px 20px 8px;
     font-weight: bold;
+    float: right;
+    margin: 4px 25px auto auto;
 }
 .top-1{
-    border: 1px solid pink;
+    border: 1px solid transparent;
+    margin-top: 22px;
+    height: 60px;
+}
+.top-2{
+    border: 1px solid transparent;
+    height: 40px;
+    margin-top: 12px;
+}
+.top-bot{
+    float: right;
+    margin: -28px 40px auto auto;
+}
+.follow {
+    text-decoration: none;
+    color: #568da7;
+    border-bottom: 1px dashed #568da7;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 30px auto auto -92px;
+    float: left;
 }
 .top-1 p{
-    font-size: 12px;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 20px;
 }
 .top-1 span:nth-child(2), .top-2 span:first-child{
     font-weight: bold;
+    font-size: 28px;
+    color: #595959;
+    float: left;
+    padding-left: 20px;
+}
+.grn{
+    font-size: 14px;
+    color: #595959;
+    float: left;
+    padding: 12px 0 0 2px;
 }
 
-.prod{
-    width: 125px;
-    height: 20px;
-    background: url("https://pp.vk.me/c633925/v633925121/257ad/56Mgqc_lxXI.jpg")no-repeat;
-
-}
- .prod p{
+  .product{
     color: #595959;
     font-size: 12px;
+      float: right;
+      margin: 11px 40px auto auto;
 }
+
 .left{
     float: left;
     height: 565px;
