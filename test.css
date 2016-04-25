@@ -180,7 +180,7 @@ input[placeholder]{
     text-decoration: none;
     float: right;
 }
-.buttons a:hover{
+.buttons a:hover, .buy-1:hover{
     opacity: 0.6;
 }
 .basket{
