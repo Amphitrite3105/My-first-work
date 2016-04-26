@@ -514,7 +514,39 @@ input[placeholder]{
       float: right;
       margin: 11px 40px auto auto;
 }
-
+.about1, .about2, .eval{
+    float: left;
+    font-size: 12px;
+    color: #595959;
+}
+.about1{
+    color: #000000;
+    padding-right: 2px;
+}
+.about-pl{
+    margin-top: 10px;
+}
+.stars{
+    margin-top: 8px;
+    margin-left: -3px;
+    background: url("https://pp.vk.me/c633925/v633925121/25572/fUyFdzKGSs0.jpg") no-repeat 0% 50%;
+}
+.red{
+    color: #f75b6d;
+    float: left;
+    margin-top: 3px;
+    margin-left: 75px;
+}
+.eval{
+    margin-top:12px;
+}
+.recall a{
+    font-size: 12px;
+    color: #568da7;
+}
+.recall{
+    margin-right: 325px;
+}
 .left{
     float: left;
     height: 565px;
