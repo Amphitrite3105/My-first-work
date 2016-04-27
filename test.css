@@ -155,7 +155,21 @@ nav{
     border-radius: 3px;
     font-size: 14px;
 }
-
+.red1{
+    width: 20px;
+    height: 20px;
+    background: url("https://pp.vk.me/c633926/v633926121/273f8/xM9Kke5O4A0.jpg") no-repeat;
+    position: absolute;
+    margin-top: -4px;
+}
+.red2{
+    width: 20px;
+    height: 20px;
+    background: url("https://pp.vk.me/c633925/v633925121/25533/pfk49-YPaIE.jpg") no-repeat;
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 391px;
+}
 input[placeholder]{
     font-style: italic;
     color: #9b9b9b;
@@ -201,9 +215,9 @@ input[placeholder]{
     margin: 15px auto 10px 10px;
     width: 300px;
     height: 20px;
-    background: url("https://pp.vk.me/c633925/v633925121/25612/6AUztAx-ZKo.jpg") no-repeat 17% 0%,
-                url("https://pp.vk.me/c633925/v633925121/25612/6AUztAx-ZKo.jpg") no-repeat 45% 0%,
-                url("https://pp.vk.me/c633925/v633925121/25612/6AUztAx-ZKo.jpg") no-repeat 87% 0%;
+    background: url("https://pp.vk.me/c633925/v633925121/25612/6AUztAx-ZKo.jpg") no-repeat 17% -20%,
+                url("https://pp.vk.me/c633925/v633925121/25612/6AUztAx-ZKo.jpg") no-repeat 45% -20%,
+                url("https://pp.vk.me/c633925/v633925121/25612/6AUztAx-ZKo.jpg") no-repeat 87% -20%;
     border: 1px solid transparent;
 }
 
@@ -507,17 +521,29 @@ input[placeholder]{
     float: left;
     padding: 12px 0 0 2px;
 }
-
+.icon {
+    width: 10px;
+    height: 10px;
+    background: url("https://pp.vk.me/c633925/v633925121/257ad/56Mgqc_lxXI.jpg") no-repeat 60% 25%;
+    position: absolute;
+    margin: 13px auto auto 154px;
+}
   .product{
     color: #595959;
     font-size: 12px;
       float: right;
       margin: 11px 40px auto auto;
 }
+.middle-1{
+    height: 160px;
+    width: 300px;
+    float: left;
+}
 .about1, .about2, .eval{
     float: left;
     font-size: 12px;
     color: #595959;
+    padding-left: 5px;
 }
 .about1{
     color: #000000;
@@ -528,7 +554,7 @@ input[placeholder]{
 }
 .stars{
     margin-top: 8px;
-    margin-left: -3px;
+    margin-left: 3px;
     background: url("https://pp.vk.me/c633925/v633925121/25572/fUyFdzKGSs0.jpg") no-repeat 0% 50%;
 }
 .red{
@@ -547,6 +573,102 @@ input[placeholder]{
 .recall{
     margin-right: 325px;
 }
+.middle-2{
+    background: #f9f9f9;
+    height: 130px;
+    width: 125px;
+    float: right;
+    margin: 13px 20px auto auto;
+    padding: 5px 5px 5px 15px;
+}
+
+.rating-pl{
+    font-size: 11px;
+    color: #595959;
+    float: left;
+}
+
+.number{
+    color: #929292;
+    font-size: 11px;
+    float: right;
+    margin-right: 5px;
+}
+.number1{
+    margin-top: 15px;
+    height: 12px;
+    background: url("https://pp.vk.me/c633925/v633925121/25579/optQWtsIL3c.jpg") no-repeat -15% 50%;
+}
+.number2{
+    margin-top: 13px;
+    height: 12px;
+    background: url("https://pp.vk.me/c633925/v633925121/25580/plmJ_IJJhRU.jpg") no-repeat -35% 50%;
+}
+.number3{
+    margin-top: 15px;
+    height: 12px;
+    background: url("https://pp.vk.me/c633925/v633925121/25587/KFAwRo7-X7s.jpg") no-repeat -15% 50%;
+}
+.another{
+    border: 1px solid #ebebeb;
+    height: 120px;
+    width: 460px;
+    margin-top: 170px;
+    padding: 8px 12px;
+}
+.another h3{
+    color: #595959;
+    font-size: 14px;
+    text-align: left;
+}
+.another ul{
+    list-style: none;
+    float: left;
+}
+.another li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.an-col{
+    margin-top: -5px;
+}
+.an-col a{
+    color: #568da7;
+    font-size: 13px;
+}
+.an-price{
+    margin-top: 5px;
+}
+.an1, .an2{
+    font-size: 13px;
+    color: #595959;
+}
+.an1{
+    font-weight: bold;
+}
+
+.bottom{
+    width: 465px;
+    background: #f9f9f9;
+    padding: 15px 10px;
+    margin-top: 15px;
+}
+.bottom p{
+    text-align: left;
+    font-size: 14px;
+    color: #595959;
+}
+.bottom .soc-icon{
+    width: 315px;
+    height: 25px;
+    float: right;
+    margin: -20px 15px auto auto;
+    background: url("https://pp.vk.me/c633926/v633926121/273dc/-tRc9M7I3qs.jpg") no-repeat 0% 50%,
+                url("https://pp.vk.me/c633926/v633926121/273f1/SEwGj30XMcw.jpg") no-repeat 34% 49%,
+                url("https://pp.vk.me/c633926/v633926121/273e3/ozduwDBMZgE.jpg") no-repeat 68% 50%,
+                url("https://pp.vk.me/c633926/v633926121/273ea/zTOWH-lq2eM.jpg") no-repeat 94% 50%;
+    cursor: pointer;
+}
 .left{
     float: left;
     height: 565px;
@@ -555,6 +677,24 @@ input[placeholder]{
     background: #ffffff;
 }
  /* Слайдер */
+.gal1{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: -25px;
+    background: url("https://pp.vk.me/c633926/v633926121/273ff/pVkZ62Sw5y0.jpg") no-repeat;
+    cursor: pointer;
+}
+.gal2{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    margin-left: 310px;
+    margin-top: 27px;
+    background: url("https://pp.vk.me/c633926/v633926121/27406/4cg0_qKyq2U.jpg") no-repeat;
+    cursor: pointer;
+}
 .slider{
     position: relative;
     width: 350px;
