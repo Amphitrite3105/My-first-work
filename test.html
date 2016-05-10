@@ -4,6 +4,10 @@
     <title>Начало</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="test.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="bsslider/jquery.bxslider.min.js"></script>
+    <link href="bsslider/jquery.bxslider.css" rel="stylesheet"/>
+    <script src="js/test.js"></script>
 </head>
 <body>
 <header>
@@ -82,94 +86,80 @@
     </nav>
     <div class="checkbox">
         <div class="dis">
-        <span class="heart"></span>
-        <a href="#">В список желаний</a>
+            <span class="heart"></span>
+            <a href="#">В список желаний</a>
         </div>
         <div class="check">
-        <span class="checkbox-off"></span>
-        <input type="checkbox" name="checkbox" id="comparison">
-        <label for="comparison">Добавить к сравнению</label>
+            <span class="checkbox-off"></span>
+            <input type="checkbox" name="checkbox" id="comparison">
+            <label for="comparison">Добавить к сравнению</label>
         </div>
     </div>
     <section class="apple">
         <div class="left">
             <div class="slider">
-                <div class="gal1"></div>
-                <input type="radio" name="slide_switch" id="id1" checked="checked">
-                <label for="id1">
-                <img src="https://pp.vk.me/c633925/v633925121/27cf9/cwU-D-KSnrs.jpg" width="100">
-                </label>
-                <img src="https://pp.vk.me/c633925/v633925121/27cf9/cwU-D-KSnrs.jpg">
+                <li><img src="https://pp.vk.me/c633925/v633925121/27cf9/cwU-D-KSnrs.jpg" /></li>
+                <li><img src="https://pp.vk.me/c633925/v633925121/27d0f/OExomSJ4XlI.jpg" /></li>
+                <li><img src="https://pp.vk.me/c633925/v633925121/27d00/XAF1GWI763Q.jpg" /></li>
+                <li><img src="https://pp.vk.me/c633925/v633925121/27d08/86N2GDagB2Y.jpg" /></li>
+            </div>
 
-                <input type="radio" name="slide_switch" id="id2">
-                <label for="id1">
-                    <img src="https://pp.vk.me/c633925/v633925121/27d0f/OExomSJ4XlI.jpg" width="100">
-                </label>
-                <img src="https://pp.vk.me/c633925/v633925121/27d0f/OExomSJ4XlI.jpg">
-
-                <input type="radio" name="slide_switch" id="id3">
-                <label for="id1">
-                    <img src="https://pp.vk.me/c633925/v633925121/27d00/XAF1GWI763Q.jpg" width="100">
-                </label>
-                <img src="https://pp.vk.me/c633925/v633925121/27d00/XAF1GWI763Q.jpg">
-
-                <input type="radio" name="slide_switch" id="id4">
-                <label for="id1">
-                    <img src="https://pp.vk.me/c633925/v633925121/27d08/86N2GDagB2Y.jpg" width="100">
-                </label>
-                <img src="https://pp.vk.me/c633925/v633925121/27cf9/cwU-D-KSnrs.jpg">
-                <div class="gal2"></div>
+            <div class="mini-img" id="bx-pager">
+                <a data-slide-index="0" href=""><img src="https://pp.vk.me/c633925/v633925121/27cf9/cwU-D-KSnrs.jpg" width="50" height="40" /></a>
+                <a data-slide-index="1" href=""><img src="https://pp.vk.me/c633925/v633925121/27d0f/OExomSJ4XlI.jpg" width="50" height="40" /></a>
+                <a data-slide-index="2" href=""><img src="https://pp.vk.me/c633925/v633925121/27d00/XAF1GWI763Q.jpg" width="55" height="40" /></a>
+                <a data-slide-index="3" href=""><img src="https://pp.vk.me/c633925/v633925121/27d08/86N2GDagB2Y.jpg" width="55" height="40" /></a>
             </div>
             <div class="stock">
                 <p>Акция</p>
             </div>
             <div class="video">
-            <a href="#">Смотреть видео обзор</a>
+                <a href="#">Смотреть видео обзор</a>
             </div>
         </div>
 
         <article class="center">
             <div class="top">
                 <div class="border">
-                <div class="for-end">
-                    <div class="time">
-                        <h3>До конца акции:</h3>
-                        <p>15:20</p>
-                        <p class="border-must">часов дней</p>
+                    <div class="for-end">
+                        <div class="time">
+                            <h3>До конца акции:</h3>
+                            <p>15:20</p>
+                            <p class="border-must">часов дней</p>
+                        </div>
+                        <div class="gift">
+                            <p>Карта памяти Apacer</p>
+                            <p>в подарок</p>
+                        </div>
                     </div>
-                    <div class="gift">
-                        <p>Карта памяти Apacer</p>
-                        <p>в подарок</p>
-                    </div>
-                </div>
 
-                <div class="price">
+                    <div class="price">
                         <div class="icon">
-                        <span class="gal"></span>
+                            <span class="gal"></span>
                         </div>
                         <span class="product">Товар в наличии</span>
-                    <div class="top-1">
-                        <p>цена:</p>
-                        <span>5 533</span>
-                        <span class="grn">грн</span>
-                        <a class="follow" href="#">Следить за ценой</a>
-                        <a class="buy-1" href="#">Купить</a>
-                    </div>
-                    <div class="top-2">
-                        <span>553</span>
-                        <span class="grn grn-month">грн/мес</span>
-                        <a class="buy-2" href="#">Купить в кредит</a>
-                    </div>
-                    <div class="top-bot">
-                        <a class="follow" href="#">Купить в 1 клик</a>
-                    </div>
+                        <div class="top-1">
+                            <p>цена:</p>
+                            <span>5 533</span>
+                            <span class="grn">грн</span>
+                            <a class="follow" href="#">Следить за ценой</a>
+                            <a class="buy-1" href="#">Купить</a>
+                        </div>
+                        <div class="top-2">
+                            <span>553</span>
+                            <span class="grn grn-month">грн/мес</span>
+                            <a class="buy-2" href="#">Купить в кредит</a>
+                        </div>
+                        <div class="top-bot">
+                            <a class="follow" href="#">Купить в 1 клик</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="middle-1">
                 <div class="recall-pl">
                     <p>
-                    <span class="eval">Средняя оценка пользователя:</span>
+                        <span class="eval">Средняя оценка пользователя:</span>
                     </p><br>
                     <div class="stars">
                     <span class="recall" style="color: #568da7; font-size: 12px"><span class="red">4.1</span>
@@ -179,7 +169,7 @@
                 </div>
                 <div class="about-pl">
                     <p>
-                    <span class="about1">Диагональ экрана:</span>
+                        <span class="about1">Диагональ экрана:</span>
                         <span class="about2">4.5";</span>
                     </p><br>
                     <p>

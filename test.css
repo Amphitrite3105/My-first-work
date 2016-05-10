@@ -695,40 +695,36 @@ input[placeholder]{
     background: url("https://pp.vk.me/c633926/v633926121/27406/4cg0_qKyq2U.jpg") no-repeat;
     cursor: pointer;
 }
-.slider{
-    position: relative;
-    width: 350px;
-    padding-top: 290px;
-    margin-left: 75px;
-}
-.slider>img{
-    position: absolute;
-    top: -62px;
-    left: -150px;
 
+.mini-img{
+    margin-top: -64px;
+    margin-left: 76px;
 }
-.slider input[name="slide_switch"]{
-    display: none;
-}
-.slider label{
+.mini-img a{
     margin: 18px 0 0 7px;
     border: 1px solid #ebebeb;
     float: left;
     cursor: pointer;
-}
-.slider label img{
-    display: block;
-    width: 65px;
-    height: 50px;
+    display: inline;
+    width: 55px;
+    height: 40px;
+    padding: 5px;
 }
 
-.slider input[name="slide_switch"]:checked + label{
+.slider li{
+    display: block;
+    width: 285px;
+    height: 295px;
+    margin: -7px  10px;
+}
+.slider li{
+    transform: scale(0.97);
+}
+.mini-img a:hover,
+.mini-img a.active{
     border-color: #568da7;
 }
 
-.slider input[name="slide_switch"] ~ img{
-    transform: scale(0.71);
-}
 .video{
     background: url("https://pp.vk.me/c633925/v633925121/25510/a6P5nyO-TVo.jpg") no-repeat 5% 10%;
     width: 165px;
