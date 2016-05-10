@@ -720,9 +720,25 @@ input[placeholder]{
 .slider li{
     transform: scale(0.97);
 }
-.mini-img a:hover,
+
 .mini-img a.active{
     border-color: #568da7;
+}
+
+#prev-slide a{
+    float: left;
+    margin-left: -322px;
+    margin-top: 33px;
+    color: transparent;
+    background: url("https://pp.vk.me/c631218/v631218121/288a0/MePIolJ65eQ.jpg") no-repeat 50% 50%;
+}
+
+#next-slide a{
+    float: right;
+    margin-top: 33px;
+    margin-right: 30px;
+    color: transparent;
+    background: url("https://pp.vk.me/c633926/v633926121/27406/4cg0_qKyq2U.jpg") no-repeat 50% 50%;
 }
 
 .video{
