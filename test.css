@@ -11,14 +11,15 @@ body{
     font-family: Arial;
  }
 header{
-    height: 100px;
+    height: 68px;
     width: auto;
     background: white;
-    background: url(http://img.allo.ua/skin/frontend/enterprise/allov2/images/logo1.png) no-repeat -1% -18%;
+    background: url(http://img.allo.ua/skin/frontend/enterprise/allov2/images/logo1.png) -10px -5px no-repeat;
 }
 nav{
     margin: 0 auto;
 }
+
 .main-menu a{
     padding: 1px 15px;
 }
@@ -212,7 +213,7 @@ input[placeholder]{
     margin: 10px auto auto 10px;
 }
 .ref{
-    margin: 15px auto 10px 10px;
+    margin: 15px auto 20px 10px;
     width: 300px;
     height: 20px;
     background: url("https://pp.vk.me/c633925/v633925121/25612/6AUztAx-ZKo.jpg") no-repeat 17% -20%,
@@ -262,9 +263,10 @@ input[placeholder]{
     height: 0px;
 }
 .plan{
-    margin-top: 80px;
+    margin-top: 115px;
     background: #ffffff;
     height: 85px;
+    border: 1px solid #ebebeb;
 }
 .plan h1{
     color: #595959;
@@ -288,10 +290,12 @@ input[placeholder]{
 .about{
     display: table;
     background: #ffffff;
-    width: 100%;
+    width: 1199px;
     border-spacing: 10px 0;
     border-bottom: 1px solid #e0e0e0;
     margin-top: -3px;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
 }
 
 .about ul{
@@ -333,11 +337,12 @@ input[placeholder]{
 }
 .checkbox{
     height: 25px;
-    width: 350px;
+    width: 1199px;
     background: #ffffff;
     padding-top: 10px;
     margin: 0 auto;
-    border: 1px solid transparent;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
 
 }
 .checkbox input[name="checkbox"]{
@@ -372,9 +377,9 @@ input[type="checkbox"]:checked + label span {
 }
 .heart{
     display: inline-block;
-    background: url("img/heart.jpg") no-repeat 10% 58%;
-    height: 11px;
-    width: 13px;
+    background: url("img/heart.jpg") no-repeat 5% 65%;
+    height: 15px;
+    width: 15px;
     float: left;
     margin-left: 27px;
     margin-top: 5px;
@@ -382,9 +387,10 @@ input[type="checkbox"]:checked + label span {
 .dis{
     width: 150px;
     float: left;
+    margin-left: 420px;
 }
 .check{
-    float: right;
+    float: left;
     width: 180px;
 }
 .checkbox a{
@@ -393,7 +399,7 @@ input[type="checkbox"]:checked + label span {
 }
 .checkbox input[type="checkbox"] + label{
     margin-top: 5px;
-    margin-left: -40px;
+    margin-left: 5px;
 }
 .checkbox a, .checkbox input[type="checkbox"] + label{
     color: #568da7;
@@ -685,10 +691,12 @@ input[type="checkbox"]:checked + label span {
 }
 .left{
     float: left;
-    height: 565px;
+    height: 563px;
     width: 440px;
     border: 2px solid transparent;
     background: #ffffff;
+    border-left: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
 }
  /* Слайдер */
 .gal1{
@@ -788,11 +796,14 @@ input[type="checkbox"]:checked + label span {
     width: 496px;
     float: left;
     margin: auto;
+    border-bottom: 1px solid #ebebeb;
 }
 .right {
     float: right;
     height: 565px;
     width: 260px;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
 
 }
 .right p{
