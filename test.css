@@ -331,7 +331,6 @@ input[placeholder]{
 .right{
     background: #ffffff;
 }
-
 .checkbox{
     height: 25px;
     width: 350px;
@@ -343,6 +342,19 @@ input[placeholder]{
 }
 .checkbox input[name="checkbox"]{
     display: none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(img/check.jpg) left 1px no-repeat ;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(img/check.jpg) left -15px no-repeat;
 }
 
 .checkbox-off{
@@ -358,7 +370,6 @@ input[placeholder]{
     float: left;
     margin-left: -10px;
 }
-
 .heart{
     display: inline-block;
     background: url("img/heart.jpg") no-repeat 10% 58%;
@@ -381,8 +392,8 @@ input[placeholder]{
     margin-left: -2px;
 }
 .checkbox input[type="checkbox"] + label{
-    margin-left: -40px;
     margin-top: 5px;
+    margin-left: -40px;
 }
 .checkbox a, .checkbox input[type="checkbox"] + label{
     color: #568da7;
@@ -841,7 +852,6 @@ input[placeholder]{
     margin: 15px 0 15px 0;
     padding-left: 35px;
 }
-
 .icons{
     height: 270px;
     width: 25px;
