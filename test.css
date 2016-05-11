@@ -14,7 +14,7 @@ header{
     height: 68px;
     width: auto;
     background: white;
-    background: url(http://img.allo.ua/skin/frontend/enterprise/allov2/images/logo1.png) -10px -5px no-repeat;
+    background: url(img/sprite.png) left 20px no-repeat;
 }
 nav{
     margin: 0 auto;
