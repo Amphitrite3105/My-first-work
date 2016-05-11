@@ -331,6 +331,7 @@ input[placeholder]{
 .right{
     background: #ffffff;
 }
+
 .checkbox{
     height: 25px;
     width: 350px;
@@ -343,6 +344,7 @@ input[placeholder]{
 .checkbox input[name="checkbox"]{
     display: none;
 }
+
 .checkbox-off{
     display: inline-block;
     height: 11px;
@@ -356,6 +358,7 @@ input[placeholder]{
     float: left;
     margin-left: -10px;
 }
+
 .heart{
     display: inline-block;
     background: url("https://pp.vk.me/c633925/v633925121/2578f/JOVwE9KU8CI.jpg") no-repeat 10% 58%;
@@ -838,6 +841,7 @@ input[placeholder]{
     margin: 15px 0 15px 0;
     padding-left: 35px;
 }
+
 .icons{
     height: 270px;
     width: 25px;
