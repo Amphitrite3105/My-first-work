@@ -461,9 +461,12 @@ input[type="checkbox"]:checked + label span {
     padding-top: 0;
     padding-bottom: 5px;
 }
-.gift{
+ .apaser{
+    width: 40px;
+     height: 55px;
     padding-top: 40px;
-    background: url("https://pp.vk.me/c633925/v633925121/25517/1SgQboxzlZ8.jpg") no-repeat 50% 10%;
+    background: url(img/sprite.png) -146px -50px no-repeat;
+     margin: auto;
 }
 .gift p{
     font-size: 12px;
@@ -471,8 +474,8 @@ input[type="checkbox"]:checked + label span {
     line-height: 1;
 }
 
-.gift p:first-child{
-    margin-top: 25px;
+.gift p:nth-child(2){
+    margin-top: -30px;
 }
 .gift p:last-child{
     font-size: 14px;
@@ -519,7 +522,6 @@ input[type="checkbox"]:checked + label span {
 }
 .top-1{
     border: 1px solid transparent;
-    margin-top: 22px;
     height: 60px;
 }
 .top-2{
@@ -561,15 +563,14 @@ input[type="checkbox"]:checked + label span {
 .icon {
     width: 10px;
     height: 10px;
-    background: url("https://pp.vk.me/c633925/v633925121/257ad/56Mgqc_lxXI.jpg") no-repeat 60% 25%;
-    position: absolute;
+    background: url(img/sprite.png) -87px -81px no-repeat;
     margin: 13px auto auto 154px;
 }
   .product{
     color: #595959;
     font-size: 12px;
       float: right;
-      margin: 11px 40px auto auto;
+      margin: -13px 40px auto auto;
 }
 .middle-1{
     height: 160px;
@@ -589,10 +590,16 @@ input[type="checkbox"]:checked + label span {
 .about-pl{
     margin-top: 10px;
 }
+
 .stars{
-    margin-top: 8px;
-    margin-left: 3px;
-    background: url("https://pp.vk.me/c633925/v633925121/25572/fUyFdzKGSs0.jpg") no-repeat 0% 50%;
+    margin-left: 4px;
+}
+
+.icon-stars{
+    width: 70px;
+    height: 15px;
+    background: url(img/sprite.png) -5px -76px no-repeat;
+    margin-top: 10px;
 }
 .red{
     color: #f75b6d;
@@ -602,6 +609,10 @@ input[type="checkbox"]:checked + label span {
 }
 .eval{
     margin-top:12px;
+}
+.eval-star{
+    margin-top: -17px;
+    float: left;
 }
 .recall a{
     font-size: 12px;
@@ -766,26 +777,35 @@ input[type="checkbox"]:checked + label span {
 
 #prev-slide a{
     float: left;
-    margin-left: -322px;
+    margin-left: -317px;
     margin-top: 33px;
     color: transparent;
-    background: url("https://pp.vk.me/c631218/v631218121/288a0/MePIolJ65eQ.jpg") no-repeat 50% 50%;
+    width: 15px;
+    height: 20px;
+    background: url(img/sprite.png) -103px -96px  no-repeat;
 }
 
 #next-slide a{
     float: right;
     margin-top: 33px;
-    margin-right: 30px;
+    margin-right: 43px;
     color: transparent;
-    background: url("https://pp.vk.me/c633926/v633926121/27406/4cg0_qKyq2U.jpg") no-repeat 50% 50%;
+    width: 15px;
+    height: 20px;
+    background: url(img/sprite.png) -123px -96px  no-repeat;
 }
 
 .video{
-    background: url("https://pp.vk.me/c633925/v633925121/25510/a6P5nyO-TVo.jpg") no-repeat 5% 10%;
     width: 165px;
     height: 30px;
     margin: 35px auto auto 72px;
     float: left;
+}
+.icon-video{
+    width: 17px;
+    height: 17px;
+    background: url(img/sprite.png) -123px -73px  no-repeat;
+    margin-left: 13px;
 }
 .video a {
     text-decoration: none;
@@ -793,7 +813,9 @@ input[type="checkbox"]:checked + label span {
     border-bottom: 1px dashed #568da7;
     cursor: pointer;
     font-size: 12px;
-    margin-left: 25px;
+    margin-left: 33px;
+    margin-top: -17px;
+    float: left;
 }
 .stock{
     background: #f75b6d;
@@ -855,6 +877,7 @@ input[type="checkbox"]:checked + label span {
 }
 
 .city-arrow{
+    /*
     border: 4px solid #568da7;
     border-bottom-width: 0;
     border-left-color: transparent;
@@ -862,6 +885,12 @@ input[type="checkbox"]:checked + label span {
     width: 0px;
     height: 0px;
     margin: -9px 15px auto auto;
+    */
+    width: 10px;
+    height: 10px;
+    background: url(img/sprite.png) -125px -58px  no-repeat;
+    margin-top: -11px;
+    margin-left: 202px;
 }
 .info h2 {
     margin-left: 35px;
@@ -870,7 +899,7 @@ input[type="checkbox"]:checked + label span {
     text-align: left;
 }
 .delivery{
-    margin-top: 24px;
+    margin-top: 20px;
     border-bottom: 1px solid #ebebeb;
 }
 .payment, .exchange{
@@ -884,15 +913,37 @@ input[type="checkbox"]:checked + label span {
     height: 270px;
     width: 25px;
     float: left;
-    margin-left: -5px;
     position: relative;
     z-index: 100;
-    background: url("https://pp.vk.me/c633925/v633925121/254ed/SyqBwD9Hpsw.jpg") no-repeat 5% 4%,
-                url("https://pp.vk.me/c633925/v633925121/254f4/zUNq_OBGoq0.jpg") no-repeat 5% 24%,
-                url("https://pp.vk.me/c633925/v633925121/254fb/a382rnkFHZo.jpg") no-repeat 5% 61%,
-                url("https://pp.vk.me/c633925/v633925121/25502/rMqbXxnBeZ8.jpg") no-repeat 90% 98%;
 }
 
+.home{
+    width: 22px;
+    height: 22px;
+    background: url(img/sprite.png) -7px -95px no-repeat;
+    margin-top: 13px;
+}
+
+.delivery-car{
+    width: 22px;
+    height: 22px;
+    background: url(img/sprite.png) -30px -95px no-repeat;
+    margin-top: 23px;
+}
+
+.icon-card{
+    width: 25px;
+    height: 22px;
+    background: url(img/sprite.png) -55px -95px no-repeat;
+    margin-top: 70px;
+}
+
+.icon-ex{
+    width: 20px;
+    height: 25px;
+    background: url(img/sprite.png) -77px -95px no-repeat;
+    margin-top: 69px;
+}
 .payment ul{
     list-style: none;
     margin-top: 15px;
@@ -913,18 +964,18 @@ input[type="checkbox"]:checked + label span {
 .table{
     font-size: 13px;
     color: #595959;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 5px;
 }
 .table td:first-child{
-    background: url("https://pp.vk.me/c633925/v633925121/255c6/Ml26P5yXoVs.jpg") no-repeat 220% 50%;
+    background: url(img/arrow-up.jpg) 200% 70% no-repeat;
     width: 15px;
 }
 table{
     border: 2px solid #f9f9f9;
     width: 250px;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     border-collapse: collapse;
 }
 
@@ -941,7 +992,7 @@ table td{
     padding-right: 80px;
 }
 .table th{
-    font-feight: bold;
+    font-weight: bold;
     padding: 10px;
     padding-right: 120px;
     font-size: 14px;
