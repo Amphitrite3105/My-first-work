@@ -52,11 +52,22 @@ nav{
 }
 .header-main-center .phone{
     cursor: pointer;
-    background: url("https://pp.vk.me/c633925/v633925121/25509/rzxWLcBOa1E.jpg") no-repeat 0% 50%,
-                url("https://pp.vk.me/c633925/v633925121/255e5/vu7q23CexJs.jpg") no-repeat 97% 50%;
     width: 160px;
     height: 20px;
+}
+.icon-phone{
+    width: 20px;
+    height: 20px;
+    background: url(img/sprite.png) 1px -51px no-repeat;
 
+}
+.arrow-phone{
+    width: 20px;
+    height: 20px;
+    background: url(img/sprite.png) -17px -51px no-repeat;
+    float: right;
+    margin-top: -24px;
+    margin-right: 2px;
 }
 /*.arrow-phone{
     border: 5px solid #595959;
@@ -70,7 +81,7 @@ nav{
 }*/
 .phone p{
     white-space: pre-wrap;
-    margin: 20px  auto auto 22px;
+    margin: -17px  auto auto 22px;
     text-align: left;
     font-weight: bold;
     font-size: 18px;
@@ -159,16 +170,16 @@ nav{
 .red1{
     width: 20px;
     height: 20px;
-    background: url("https://pp.vk.me/c633926/v633926121/273f8/xM9Kke5O4A0.jpg") no-repeat;
+    background: url(img/sprite.png) -32px -51px no-repeat;
     position: absolute;
-    margin-top: -4px;
+    margin-top: -3px;
 }
 .red2{
     width: 20px;
     height: 20px;
-    background: url("https://pp.vk.me/c633925/v633925121/25533/pfk49-YPaIE.jpg") no-repeat;
+    background: url(img/sprite.png) -52px -51px no-repeat;
     position: absolute;
-    margin-top: -16px;
+    margin-top: -19px;
     margin-left: 391px;
 }
 input[placeholder]{
@@ -199,18 +210,24 @@ input[placeholder]{
     opacity: 0.6;
 }
 .basket{
-    background: url("https://pp.vk.me/c633925/v633925121/255bf/2fkyOW6M7Gc.jpg") no-repeat 10% 5%;
     width: 168px;
     height: 60px;
     border: 1px solid transparent;
     margin: 10px 6px auto auto;
     cursor: pointer;
 }
+.icon-basket{
+    width: 30px;
+    height: 25px;
+    background: url(img/sprite.png) -75px -51px no-repeat;
+    margin-left: 15px;
+    margin-top: 4px;
+}
 .basket p{
     font-size: 12px;
     font-weight: bold;
     text-align: right;
-    margin: 10px auto auto 10px;
+    margin: -17px auto auto 10px;
 }
 .ref{
     margin: 15px auto 20px 10px;
@@ -377,7 +394,7 @@ input[type="checkbox"]:checked + label span {
 }
 .heart{
     display: inline-block;
-    background: url("img/heart.jpg") no-repeat 5% 65%;
+    background: url(img/sprite.png) -105px -57px no-repeat;
     height: 15px;
     width: 15px;
     float: left;
