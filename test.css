@@ -645,17 +645,17 @@ input[type="checkbox"]:checked + label span {
 .number1{
     margin-top: 15px;
     height: 12px;
-    background: url("https://pp.vk.me/c633925/v633925121/25579/optQWtsIL3c.jpg") no-repeat -15% 50%;
+    background: url(img/num1.jpg) no-repeat -15% 50%;
 }
 .number2{
     margin-top: 13px;
     height: 12px;
-    background: url("https://pp.vk.me/c633925/v633925121/25580/plmJ_IJJhRU.jpg") no-repeat -35% 50%;
+    background: url(img/num2.jpg) no-repeat -35% 50%;
 }
 .number3{
     margin-top: 15px;
     height: 12px;
-    background: url("https://pp.vk.me/c633925/v633925121/25587/KFAwRo7-X7s.jpg") no-repeat -15% 50%;
+    background: url(img/num3.jpg) no-repeat -15% 50%;
 }
 .another{
     border: 1px solid #ebebeb;
@@ -711,10 +711,10 @@ input[type="checkbox"]:checked + label span {
     height: 25px;
     float: right;
     margin: -20px 15px auto auto;
-    background: url("https://pp.vk.me/c633926/v633926121/273dc/-tRc9M7I3qs.jpg") no-repeat 0% 50%,
-                url("https://pp.vk.me/c633926/v633926121/273f1/SEwGj30XMcw.jpg") no-repeat 34% 49%,
-                url("https://pp.vk.me/c633926/v633926121/273e3/ozduwDBMZgE.jpg") no-repeat 68% 50%,
-                url("https://pp.vk.me/c633926/v633926121/273ea/zTOWH-lq2eM.jpg") no-repeat 94% 50%;
+    background: url(img/vk.jpg) no-repeat 0% 50%,
+                url(img/fb.jpg) no-repeat 34% 49%,
+                url(img/tw.jpg) no-repeat 68% 50%,
+                url(img/gl.jpg) no-repeat 94% 50%;
     cursor: pointer;
 }
 .left{
@@ -727,24 +727,6 @@ input[type="checkbox"]:checked + label span {
     border-bottom: 1px solid #ebebeb;
 }
  /* Слайдер */
-.gal1{
-    position: absolute;
-    width: 20px;
-    height: 30px;
-    margin-top: 30px;
-    margin-left: -25px;
-    background: url("https://pp.vk.me/c633926/v633926121/273ff/pVkZ62Sw5y0.jpg") no-repeat;
-    cursor: pointer;
-}
-.gal2{
-    position: absolute;
-    width: 20px;
-    height: 30px;
-    margin-left: 310px;
-    margin-top: 27px;
-    background: url("https://pp.vk.me/c633926/v633926121/27406/4cg0_qKyq2U.jpg") no-repeat;
-    cursor: pointer;
-}
 
 .mini-img{
     margin-top: -64px;
@@ -891,6 +873,7 @@ input[type="checkbox"]:checked + label span {
     background: url(img/sprite.png) -125px -58px  no-repeat;
     margin-top: -11px;
     margin-left: 202px;
+    cursor: pointer;
 }
 .info h2 {
     margin-left: 35px;
