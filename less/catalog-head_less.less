@@ -145,12 +145,18 @@ body{
       font-style: italic;
       .color-size(@dark-grey2; 14px);
     }
+    :focus::-webkit-input-placeholder{
+      color: transparent;
+    }
     input[type="text"] {
       .width-height(390px);
       .border(@very-light-gray);
       .rounded(3px);
       .padding-d(5px; 5px; 7px; 6px);
       .float();
+    }
+    input[type="text"]:focus{
+      outline: none;
     }
     .red1 {
       span {

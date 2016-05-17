@@ -93,6 +93,9 @@ body {
   color: #9b9b9b;
   font-size: 14px;
 }
+.header-main-center .search :focus::-webkit-input-placeholder {
+  color: transparent;
+}
 .header-main-center .search input[type="text"] {
   width: 390px;
   height: auto;
@@ -100,6 +103,9 @@ body {
   border-radius: 3px;
   padding: 5px 5px 7px 6px;
   float: left;
+}
+.header-main-center .search input[type="text"]:focus {
+  outline: none;
 }
 .header-main-center .search .red1 span {
   position: absolute;
