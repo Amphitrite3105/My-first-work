@@ -1,12 +1,14 @@
 @very-dark-grey: #595959;
 @dark-grey: #929292;
+@dark-grey2: #9b9b9b;
 @very-light-gray: #dadada;
 @vivid-red: #e31837;
+@white: #ffffff;
 
 .font-family(@font-family: Arial){
     font-family: @font-family;
 }
-.color-size(@color; @size: 12px){
+.color-size(@color:@very-dark-grey; @size: 12px){
    color: @color;
    font-size: @size;
 }
@@ -22,15 +24,66 @@
 .bordered(@color){
     border-right: 1px solid @color;
 }
-.padding(@top; @right; @bottom; @left){
+.border(@color: black){
+  border: 1px solid @color;
+}
+.width-height(@width: auto; @height: auto){
+    width: @width;
+    height: @height;
+}
+.padding(@padding: 0){
+    padding: @padding;
+}
+.padding-d(@top: auto; @right: auto; @bottom: auto; @left: auto){
     padding: @top @right @bottom @left;
 }
+.margin(@margin: 0){
+    margin: @margin;
+}
+.margin-d(@top: auto; @right: auto; @bottom: auto; @left: auto){
+    margin: @top @right @bottom @left;
+}
+.float(@float:left){
+  float: @float;
+}
+.position(@left; @top){
+  left: @left;
+  top: @top;
+}
+.rounded(@border-radius){
+  border-radius: @border-radius;
+}
+*{
+  .padding();
+  .margin();
+}
+
+body{
+  .width-height(1200px; 1690px);
+  .font-family();
+  .border(@very-light-gray);
+  .margin-d();
+}
+
+.header-left-side{
+  .width-height(390px);
+  .float();
+}
+.header-main-center{
+  .width-height(580px);
+  .float();
+}
+.header-right-side{
+  .width-height(230px);
+  .float(right);
+}
+
  .main-menu{
     a {
-      .color-size(@very-dark-grey);
+      .color-size();
       .text-decoration();
-      .padding(1px; 15px; 1px; 15px);
-      .font-family();
+      .padding-d(1px; 15px; 1px; 12px);
+
     }
     a:hover{
       .color-size(@vivid-red);
@@ -38,6 +91,7 @@
     }
    ul{
      .list-style(none);
+     .margin-d(10px);
    }
    li {
      .display(inline-block);
@@ -47,3 +101,107 @@
        .bordered(transparent);
      }
  }
+
+.header-left-side {
+  .logo {
+    .width-height(200px; 50px);
+    background: url(../img/sprite.png) -4px -4px no-repeat;
+    margin-top: 30px;
+  }
+  .allo-phone{
+    .width-height(155px; 25px);
+    .float(right);
+    margin-top: -26px;
+    margin-right: 9px;
+    .phone{
+      font-weight: bold;
+      .color-size(@very-dark-grey; 18px)
+    }
+    .icon-phone{
+        .width-height(20px; 20px);
+        background: url(../img/sprite.png) -1px -51px no-repeat;
+      .float();
+      margin-top: -3px;
+      }
+    .phone-arrow{
+      .width-height(20px; 20px);
+      background: url(../img/sprite.png) -17px -51px no-repeat;
+      .float(right);
+      margin-top: -24px;
+    }
+    }
+  }
+
+.header-main-center {
+  .search {
+    margin-top: 20px;
+    margin-left: 34px;
+    .float();
+    .width-height(470px; 30px);
+    input[placeholder] {
+      font-style: italic;
+      .color-size(@dark-grey2; 14px);
+    }
+    input[type="text"] {
+      .width-height(390px);
+      .border(@very-light-gray);
+      .rounded(3px);
+      .padding-d(5px; 5px; 7px; 6px);
+      .float();
+    }
+    .red1 {
+      span {
+        position: absolute;
+        .width-height(20px; 20px);
+        background: url(../img/sprite.png) -32px -51px no-repeat;
+        margin: -7px auto auto -6px;
+    }
+    }
+    .red2 {
+      span {
+        position: absolute;
+        .width-height(20px; 20px);
+        background: url(../img/sprite.png) -52px -51px no-repeat;
+        margin: 11px auto auto -18px;
+      }
+    }
+    .btn{
+      background: @vivid-red;
+      .text-decoration();
+      .rounded(3px);
+      .float(right);
+      padding: 8px 12px;
+      .color-size(@white);
+    }
+  }
+}
+
+ .header-right-side {
+       .main-menu {
+         .float(right);
+         margin-right: -10px;
+         a {
+           .padding-d(1px; 9px; 1px; 7px);
+           &:nth-child(2){
+             padding-right: 0;
+             }
+           }
+         }
+       }
+ .basket{
+   .width-height(155px;30px);
+   .float(right);
+   margin-top: 28px;
+    span{
+       .color-size();
+      .float(right);
+      font-weight: bold;
+     }
+   .icon-basket{
+     .width-height(32px; 27px);
+     background: url(../img/sprite.png) -73px -55px no-repeat;
+     .float(left);
+     margin-top: -4px;
+   }
+ }
+
