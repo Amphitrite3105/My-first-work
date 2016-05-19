@@ -1,0 +1,87 @@
+@import url("../import/color.less");
+@import url("../import/mixins.less");
+
+main{
+  .width-height(1200px; 1490px);
+  margin-left: -2px;
+  background: @white;
+  .float();
+  .border(lighten(@very-light-gray, 7%));
+}
+.smart{
+  padding: 14px 10px;
+  span{
+    .color-size(@very-dark-grey; 24px);
+  }
+}
+.catalog{
+  margin-left: 255px;
+  margin-top: 60px;
+  .width-height(196px; 432px);
+  .border(@very-light-gray);
+  padding: 20px 15px 15px 15px;
+}
+.photo-mobile {
+  .width-height(75px; 125px);
+  margin: auto;
+  background: url(../img/sam_gal.jpg) 50% 50% no-repeat;
+  background-size: 250%;
+}
+.over{
+  a.mobile{
+    .color-size(@dark-blue; 13px);
+    text-decoration: none;
+    .float();
+    margin-top: 13px;
+    line-height: 1.3;
+  }
+  a.mobile:hover{
+    text-decoration: underline;
+    .color(@dark-blue2);
+  }
+  .product {
+    .float();
+    .width-height(200px; 24px;);
+    .code {
+    .color-size(@dark-grey; 11px);
+    .float();
+    margin-top: 12px;
+  }
+    .delivery{
+      .width-height(24px;20px);
+      .float(right);
+      background: url(../img/sprite.png) -30px -95px no-repeat;
+      margin-top: 7px;
+      margin-left: 2px;
+    }
+    .home{
+      .width-height(24px;20px);
+      .float(right);
+      background: url(../img/sprite.png) -7px -95px no-repeat;
+      margin-top: 7px;
+      margin-left: 6px;
+    }
+  }
+  .recalls {
+    margin-top: 11px;
+    .width-height(175px; 15px);
+    .float();
+    .stars {
+      .width-height(75px; 15px);
+      .float();
+      background: url(../img/sprite.png) -5px -76px no-repeat;
+    }
+    .recall{
+      .color-size(@dark-blue;11px);
+    }
+  }
+  .price{
+    .number{
+      .color-size(@vivid-red;18px);
+      font-weight: bold;
+    }
+    .grn{
+      .color-size(@vivid-red;14px);
+    }
+  }
+}
