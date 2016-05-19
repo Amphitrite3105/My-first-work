@@ -75,7 +75,17 @@ main{
       .color-size(@dark-blue;11px);
     }
   }
+  .old-price{
+    text-decoration: line-through;
+    .color-size();
+    .float();
+    margin-top: 7px;
+    margin-left: 1px;
+  }
   .price{
+    .width-height(60px; 20px);
+    margin-top: 20px;
+  ;
     .number{
       .color-size(@vivid-red;18px);
       font-weight: bold;
@@ -83,5 +93,46 @@ main{
     .grn{
       .color-size(@vivid-red;14px);
     }
+  }
+  .buy a{
+    background: @vivid-red;
+    .text-decoration();
+    .rounded(3px);
+    .float(right);
+    padding: 8px 17px;
+    .color-size(@white);
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .buy a:hover{
+    background: lighten(@vivid-red, 15%);
+  }
+}
+
+.under{
+  margin-bottom: -10px;
+  a {
+    .color-size(@dark-blue; 12px);
+    text-decoration: none;
+    border-bottom: 1px dashed @dark-blue;
+    .float();
+    margin-top: 20px;
+  }
+}
+
+.about-phone{
+  border-top: 1px-solid @very-light-gray;
+  margin-top: 155px;
+  padding-top: 9px;
+  line-height: 0.9;
+  letter-spacing: 0;
+  .about1,.about2{
+    .color-size(@black; 12px);
+    text-align: left;
+  }
+  .about2{
+    .color-size();
+    margin-left: -3px;
   }
 }
