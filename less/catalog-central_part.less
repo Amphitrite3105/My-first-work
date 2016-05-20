@@ -18,8 +18,12 @@ main{
 .catalog{
   margin-left: 255px;
   margin-top: 60px;
-  .width-height(196px; 225px);
+  .width-height(196px; 430px);
   padding: 20px 15px 15px 15px;
+}
+.catalog:hover{
+  .border(@grey94);
+  z-index: 9999;
 }
  a.photo-mobile{
   .width-height(75px; 125px);
@@ -140,8 +144,8 @@ main{
   border-top: 1px-solid @grey94;
   margin-top: 155px;
   padding-top: 9px;
+  padding-bottom: 15px;
   line-height: 0.9;
-  letter-spacing: 0;
   .about1,.about2{
     .color-size(@black; 12px);
     text-align: left;
@@ -157,7 +161,8 @@ main{
   .width-height(196px; 280px);
   border: none;
 }
-.over:hover .under{
+.over:hover .under,
+.catalog:hover .under{
   display:block;
   position:absolute;
   top: 155px;
@@ -175,6 +180,11 @@ main ul{
 
 main li{
   position: relative;
+}
+
+main  li.top{
+  position: absolute;
+  margin-top: -205px;
 }
 
 
