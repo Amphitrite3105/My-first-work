@@ -598,7 +598,6 @@ input[type="checkbox"]:checked + label span {
 .icon-stars{
     width: 70px;
     height: 15px;
-    background: url(../img/sprite.png) -5px -76px no-repeat;
     margin-top: 10px;
 }
 .red{
