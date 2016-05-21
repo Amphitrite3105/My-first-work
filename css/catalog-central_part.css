@@ -15,14 +15,13 @@ main {
 }
 .catalog {
   margin-left: 255px;
-  margin-top: 60px;
   width: 196px;
   height: 430px;
   padding: 20px 15px 15px 15px;
+  background: #ffffff;
 }
 .catalog:hover {
   border: 1px solid #f0f0f0;
-  z-index: 9999;
 }
 a.photo-mobile {
   width: 75px;
@@ -128,15 +127,17 @@ a.photo-mobile {
   background: #ee5a70;
 }
 .compare {
-  margin-top: 110px;
+  width: 196px;
+  height: 25px;
+  margin-top: 10px;
+  float: left;
 }
 .compare .box {
   width: 19px;
   height: 19px;
   background: url(../img/check.jpg) left 1px no-repeat;
   float: left;
-  margin-top: 18px;
-  margin-right: 5px;
+  margin-left: -3px;
 }
 .compare a {
   color: #6596ad;
@@ -144,17 +145,19 @@ a.photo-mobile {
   text-decoration: none;
   border-bottom: 1px dashed #6596ad;
   float: left;
-  margin-top: 20px;
+  margin-top: 2px;
+  margin-left: 3px;
 }
 .compare a:hover {
   color: #3c5f70;
 }
 .about-phone {
+  margin-top: 36px;
+  width: 196px;
+  height: 125px;
   background: #ffffff;
   border-top: 1px solid #f0f0f0;
-  margin-top: 155px;
-  padding-top: 9px;
-  padding-bottom: 15px;
+  padding-top: 8px;
   line-height: 0.9;
 }
 .about-phone .about1,
@@ -177,12 +180,13 @@ a.photo-mobile {
 .over:hover .under,
 .catalog:hover .under {
   display: block;
-  position: absolute;
-  top: 155px;
 }
 .under {
-  top: 155px;
   display: none;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 275px;
   z-index: 9999;
 }
 main ul {
@@ -194,5 +198,8 @@ main li {
 }
 main li.top {
   position: absolute;
-  margin-top: -205px;
+  margin-top: -145px;
+}
+main li.first {
+  margin-top: 60px;
 }

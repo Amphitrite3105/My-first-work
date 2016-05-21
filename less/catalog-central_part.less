@@ -17,13 +17,12 @@ main{
 
 .catalog{
   margin-left: 255px;
-  margin-top: 60px;
   .width-height(196px; 430px);
   padding: 20px 15px 15px 15px;
+  background: @white;
 }
 .catalog:hover{
   .border(@grey94);
-  z-index: 9999;
 }
  a.photo-mobile{
   .width-height(75px; 125px);
@@ -120,31 +119,33 @@ main{
 }
 
 .compare{
-  margin-top: 110px;
+  .width-height(196px; 25px);
+  margin-top: 10px;
+  .float();
   .box{
     .width-height(19px; 19px);
     background:url(../img/check.jpg) left 1px no-repeat ;
     .float();
-    margin-top: 18px;
-    margin-right: 5px;
+    margin-left: -3px;
   }
   a{
     .color-size(@dark-blue; 12px);
     text-decoration: none;
     border-bottom: 1px dashed @dark-blue;
     .float();
-    margin-top: 20px;
+    margin-top: 2px;
+    margin-left: 3px;
   }
   a:hover{
     .color(darken(@dark-blue, 20%));
   }
 }
 .about-phone{
+  margin-top: 36px;
+  .width-height(196px; 125px);
   background: @white;
   border-top: 1px-solid @grey94;
-  margin-top: 155px;
-  padding-top: 9px;
-  padding-bottom: 15px;
+  padding-top: 8px;
   line-height: 0.9;
   .about1,.about2{
     .color-size(@black; 12px);
@@ -164,12 +165,13 @@ main{
 .over:hover .under,
 .catalog:hover .under{
   display:block;
-  position:absolute;
-  top: 155px;
+
 }
 .under{
-  top: 155px;
-  display:none;
+  display: none;
+  position:absolute;
+  .width-height();
+  top: 275px;
   z-index: 9999;
 }
 
@@ -178,13 +180,17 @@ main ul{
   z-index: -10;
 }
 
-main li{
+main li {
   position: relative;
 }
 
 main  li.top{
   position: absolute;
-  margin-top: -205px;
+  margin-top: -145px;
+}
+
+main li.first{
+  margin-top: 60px;
 }
 
 
