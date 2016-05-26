@@ -2,7 +2,7 @@
 @import url("../import/mixins.less");
 
 main{
-  .width-height(1200px; 1490px);
+  .width-height(1200px; 1600px);
   margin-left: -2px;
   background: @white;
   .float();
@@ -14,15 +14,23 @@ main{
     .color-size(@very-dark-grey; 24px);
   }
 }
-
+.center{
+  margin-left: 243px;
+  margin-top: 40px;
+  .width-height(940px; 1500px);
+}
 .catalog{
-  margin-left: 255px;
   .width-height(196px; 430px);
   padding: 20px 15px 15px 15px;
   background: @white;
 }
-.catalog:hover{
+.over:hover{
   .border(@grey94);
+  .width-height(196px; 437px);
+  position: absolute;
+  z-index: 10;
+  background: @white;
+  box-shadow: 0 4px 15px 0 @grey94;
 }
  a.photo-mobile{
   .width-height(75px; 125px);
@@ -30,6 +38,12 @@ main{
   margin-left: 5px;
 }
 .over{
+  padding: 20px 15px 0px 15px;
+  .not-f{
+    .color-size();
+    .float();
+    margin-top: 20px;
+  }
   a.mobile{
     .color-size(@dark-blue; 13px);
     text-decoration: none;
@@ -102,6 +116,20 @@ main{
       .color-size(@vivid-red;14px);
     }
   }
+  .price-date{
+    margin-top: 10px;
+    .float();
+    .number, .grn, .date{
+      color: @very-dark-grey;
+      font-size: 13px;
+      .float();
+    }
+    .date{
+      font-size: 11px;
+      margin-top: 18px;
+      margin-left: -52px;
+    }
+  }
   .buy a{
     background: @vivid-red;
     .text-decoration();
@@ -116,11 +144,66 @@ main{
   .buy a:hover{
     background: lighten(@vivid-red, 15%);
   }
+  .mail a{
+    background: @dark-blue2;
+    .text-decoration();
+    .rounded(3px);
+    .float(right);
+    padding: 5px 6px 2px 6px;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  .mail a:hover{
+    background: lighten(@dark-blue2, 15%);
+  }
+  .in-basket a{
+    margin-top: 15px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    .text-decoration();
+    .rounded(3px);
+    .float(right);
+    cursor: pointer;
+    background: @grey94;
+    color: @mostly-dark-blue;
+    .border(#d7d7d7);
+  }
+}
+
+main li.second {
+  .price{
+    .width-height(80px; 20px);
+    .number, .grn{
+      color: @very-dark-grey;
+      margin-top: 20px;
+      .float();
+    }
+    .grn{
+      margin-top: 22px;
+      margin-left: 5px;
+    }
+  }
+}
+
+main li.third, li.fourth, .fourth-last, li.first-old{
+  .price{
+    .width-height(80px; 20px);
+    .number, .grn{
+      color: @very-dark-grey;
+      margin-top: 20px;
+      .float();
+    }
+    .grn{
+      margin-top: 22px;
+      margin-left: 5px;
+    }
+  }
 }
 
 .compare{
   .width-height(196px; 25px);
-  margin-top: 10px;
+  margin-top: 20px;
   .float();
   .box{
     .width-height(19px; 19px);
@@ -141,7 +224,7 @@ main{
   }
 }
 .about-phone{
-  margin-top: 36px;
+  margin-top: 46px;
   .width-height(196px; 125px);
   background: @white;
   border-top: 1px-solid @grey94;
@@ -177,20 +260,20 @@ main{
 
 main ul{
   list-style: none;
-  z-index: -10;
 }
 
 main li {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
 }
 
 main  li.top{
-  position: absolute;
   margin-top: -145px;
 }
 
 main li.first{
-  margin-top: 60px;
 }
 
 

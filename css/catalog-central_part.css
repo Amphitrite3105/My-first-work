@@ -1,6 +1,6 @@
 main {
   width: 1200px;
-  height: 1490px;
+  height: 1600px;
   margin-left: -2px;
   background: #ffffff;
   float: left;
@@ -13,21 +13,41 @@ main {
   color: #595959;
   font-size: 24px;
 }
+.center {
+  margin-left: 243px;
+  margin-top: 40px;
+  width: 940px;
+  height: 1500px;
+}
 .catalog {
-  margin-left: 255px;
   width: 196px;
   height: 430px;
   padding: 20px 15px 15px 15px;
   background: #ffffff;
 }
-.catalog:hover {
+.over:hover {
   border: 1px solid #f0f0f0;
+  width: 196px;
+  height: 437px;
+  position: absolute;
+  z-index: 10;
+  background: #ffffff;
+  box-shadow: 0 4px 15px 0 #f0f0f0;
 }
 a.photo-mobile {
   width: 75px;
   height: 125px;
   margin: auto;
   margin-left: 5px;
+}
+.over {
+  padding: 20px 15px 0px 15px;
+}
+.over .not-f {
+  color: #595959;
+  font-size: 12px;
+  float: left;
+  margin-top: 20px;
 }
 .over a.mobile {
   color: #6596ad;
@@ -111,6 +131,22 @@ a.photo-mobile {
   color: #e31837;
   font-size: 14px;
 }
+.over .price-date {
+  margin-top: 10px;
+  float: left;
+}
+.over .price-date .number,
+.over .price-date .grn,
+.over .price-date .date {
+  color: #595959;
+  font-size: 13px;
+  float: left;
+}
+.over .price-date .date {
+  font-size: 11px;
+  margin-top: 18px;
+  margin-left: -52px;
+}
 .over .buy a {
   background: #e31837;
   text-decoration: none;
@@ -126,10 +162,75 @@ a.photo-mobile {
 .over .buy a:hover {
   background: #ee5a70;
 }
+.over .mail a {
+  background: #568da7;
+  text-decoration: none;
+  border-radius: 3px;
+  float: right;
+  padding: 5px 6px 2px 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.over .mail a:hover {
+  background: #88afc2;
+}
+.over .in-basket a {
+  margin-top: 15px;
+  padding: 7px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 3px;
+  float: right;
+  cursor: pointer;
+  background: #f0f0f0;
+  color: #729db2;
+  border: 1px solid #d7d7d7;
+}
+main li.second .price {
+  width: 80px;
+  height: 20px;
+}
+main li.second .price .number,
+main li.second .price .grn {
+  color: #595959;
+  margin-top: 20px;
+  float: left;
+}
+main li.second .price .grn {
+  margin-top: 22px;
+  margin-left: 5px;
+}
+main li.third .price,
+li.fourth .price,
+.fourth-last .price,
+li.first-old .price {
+  width: 80px;
+  height: 20px;
+}
+main li.third .price .number,
+li.fourth .price .number,
+.fourth-last .price .number,
+li.first-old .price .number,
+main li.third .price .grn,
+li.fourth .price .grn,
+.fourth-last .price .grn,
+li.first-old .price .grn {
+  color: #595959;
+  margin-top: 20px;
+  float: left;
+}
+main li.third .price .grn,
+li.fourth .price .grn,
+.fourth-last .price .grn,
+li.first-old .price .grn {
+  margin-top: 22px;
+  margin-left: 5px;
+}
 .compare {
   width: 196px;
   height: 25px;
-  margin-top: 10px;
+  margin-top: 20px;
   float: left;
 }
 .compare .box {
@@ -152,7 +253,7 @@ a.photo-mobile {
   color: #3c5f70;
 }
 .about-phone {
-  margin-top: 36px;
+  margin-top: 46px;
   width: 196px;
   height: 125px;
   background: #ffffff;
@@ -191,15 +292,13 @@ a.photo-mobile {
 }
 main ul {
   list-style: none;
-  z-index: -10;
 }
 main li {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
 }
 main li.top {
-  position: absolute;
   margin-top: -145px;
-}
-main li.first {
-  margin-top: 60px;
 }
