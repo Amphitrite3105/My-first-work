@@ -2,35 +2,36 @@
 @import url("../import/mixins.less");
 
 main{
-  .width-height(1200px; 1600px);
+  .width-height(1182px; 1600px);
   margin-left: -2px;
+  padding: 15px 10px 15px 10px;
   background: @white;
   .float();
   .border(lighten(@very-light-gray, 7%));
 }
 .smart{
-  padding: 14px 10px;
+  padding-bottom: 15px;
   span{
     .color-size(@very-dark-grey; 24px);
   }
 }
 .center{
-  margin-left: 243px;
-  margin-top: 40px;
+  .float(right);
   .width-height(940px; 1500px);
+  padding: 10px 6px 15px 0px;
 }
 .catalog{
   .width-height(196px; 430px);
-  padding: 20px 15px 15px 15px;
+  padding: 5px 15px 15px 15px;
   background: @white;
 }
 .over:hover{
   .border(@grey94);
-  .width-height(196px; 437px);
+  .width-height(194px; 437px);
   position: absolute;
   z-index: 10;
   background: @white;
-  box-shadow: 0 4px 15px 0 @grey94;
+  box-shadow: 0 4px 14px 0 @grey94;
 }
  a.photo-mobile{
   .width-height(75px; 125px);
@@ -270,15 +271,77 @@ main li {
 }
 
 main  li.top{
-  margin-top: -145px;
+  margin-top: -130px;
 }
 
 main li.first{
 }
 
+.line{
+  .width-height(903px; 19px);
+  .float(right);
+  .color-size(@very-dark-grey; 14px);
+  background: @very-light-gray2;
+  padding: 12px 15px;
+  .left{
+    .float();
+    .text{
+      font-weight: bold;
+      .float();
+    }
+    .into{
+      .color-size();
+      .float();
+      .border(@dark-grey2);
+      border-right: none;
+      padding: 2px 4px;
+      border-radius: 2px 0 0 2px;
+      margin-left: 5px;
+      background: @white;
+    }
+    .icon{
+      .width-height(18px; 18px);
+      .float();
+      border-radius: 0 2px 2px 0;
+      background: url(../img/cat_sprite.png) -24px -25px no-repeat;
+      .border(@dark-grey2);
+      cursor: pointer;
+    }
+  }
+  .right{
+    .float(right);
+    .look{
+      .float();
+      font-weight: bold;
+      margin-right: 7px;
+    }
+    .plitka, .prosto{
+      display: inline-block;
+      background: url(../img/cat_sprite.png) -4px -22px no-repeat;
+      .width-height(20px; 20px);
+      .float();
+      cursor: pointer;
+    }
+    .prosto{
+      background: url(../img/cat_sprite.png) -4px -3px no-repeat;
+      margin-left: 7px;
+    }
+  }
+}
 
-
-
+.over{
+  .bottom a{
+    margin-top: 30px;
+  }
+    .bottom {
+      span.number{
+        margin-top: 36px;
+      }
+      span.grn{
+        margin-top: 38px;
+      }
+    }
+  }
 
 
 

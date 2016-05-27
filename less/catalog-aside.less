@@ -1,0 +1,30 @@
+@import url("../import/color.less");
+@import url("../import/mixins.less");
+
+.aside{
+  .float();
+    .line{
+      background: @grey;
+      border-radius: 0 9px 0 9px;
+      padding: 14px 77px 16px 77px;
+      .width-height(85px; 13px);
+      .float();
+      a.text{
+        .color-size(@dark-blue; 14px);
+        .text-decoration();
+        .float();
+        &:hover{
+          color: darken(@dark-blue, 20%);
+        }
+      }
+      .icon{
+        display: inline-block;
+        background: url(../img/cat_sprite.png) -22px -5px no-repeat;
+        .width-height(23px; 25px);
+        .float();
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: -2px;
+      }
+    }
+}
