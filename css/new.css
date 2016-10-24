@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    width: 1200px;
+    height: 1000px;
+    background: linear-gradient(to top, green, black );
+}
+main{
+    width: 1200px;
+    height: 1000px;
+    margin: auto;
+
+}
+
+.convertor{
+    background: linear-gradient(to bottom, black, green, black );
+    color: white;
+    padding: 20px 20px 40px 70px ;
+    width: 200px;
+    height: 200px;
+    border: 300px solid green;
+    border-image: url(../img/chisla.jpg) 300 round round;
+    margin: auto;
+    z-index: 10;
+}
+.convertor input[type="text"], input[type="button"]{
+    margin: auto;
+}
+.convertor input[placeholder] {
+    font-style: italic;
+}
+:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+.convertor p{
+    padding-top: 5px;
+}
