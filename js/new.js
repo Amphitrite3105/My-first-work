@@ -36,30 +36,31 @@ function count(binNumber){
 }
 
 /*
-var number;
-do{
-    number = prompt('Введите число от 1 до 1000', 1);
-    if(number < 1 || number > 1000){
-        do{
-            number = prompt('Неверный диапазон. Введите число от 1 до 1000', 1);
-        }while((number < 1 || number > 1000) && number != null);
-    } else {
-        do {
-            number = prompt('Это не число. Введите число от 1 до 1000', 1);
-        }while((number < 1 || number > 1000) && number != null);
-    }
-}while((number < 1 || number > 1000) && number != null);
+ function getWeather(){
 
-var system;
-do{
-    system = prompt('В какую систему исчесления хотите перевети?', 2);
-} while((system < 2 || system > 36) && system != null);
+ $.getJSON('https://ipinfo.io/geo', function(response) {
 
-var num = parseInt(number);
-var sys = parseInt(system);
-var numNew = parseInt(num, 10);
-var result = numNew.toString(sys);
-alert('Ваше новое число ' + result);
-alert('Всего цифр ' + result.length);
+ var loc = response.loc.split(',');
+ var coords = {
+ latitude: loc[0],
+ longitude: loc[1]
+ };
+ var url = getURL(coords);
+ $.ajax({
+ url: url,
+ complete: function (response) {
+ var json= JSON.parse(response.responseText);
+ $('#weather').html('lat =  '+json.coord.lat + '; lon = ' + json.coord.lon);
+ },
+
+ });
+ return false;
+ });
+
+ }
+
+ function getURL(crd){
+ return 'http://api.openweathermap.org/data/2.5/weather?lat='+ crd.latitude + '&lon=' + crd.longitude + '&appid=a0859eaca090469533a0e4ea68dd9fdf';
+ }
 */
 
