@@ -21,7 +21,7 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse navbar-static-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header"></div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
@@ -91,6 +91,107 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-md-6">
+            <div class="tabs">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#el1" aria-controls="el1" role="tab" data-toggle="tab">Вкладка1</a></li>
+                    <li><a href="#el2" aria-controls="el2" role="tab" data-toggle="tab">Вкладка2</a></li>
+                    <li><a href="#el3" aria-controls="el3" role="tab" data-toggle="tab">Вкладка3</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="el1">Текст1</div>
+                    <div role="tabpanel" class="tab-pane fade" id="el2">Текст2</div>
+                    <div role="tabpanel" class="tab-pane fade" id="el3">Текст3</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <a href="#hide-text" class="btn btn-success spoiler collapsed" data-toggle="collapse">Спойлер</a>
+            <div class="collapse" id="hide-text">
+                <div class="well">
+                    <p>Текст</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="accordion" class="panel-group">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">
+                            <a href="#panel-1" data-parent="#accordion" data-toggle="collapse">Судьба</a>
+                        </h1>
+                    </div>
+                    <div id="panel-1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <blockquote class="text-justify">Был только один выход, ибо наши жизни сплелись в слишком запутанный узел гнева и блаженства, чтобы решить все как-нибудь иначе. Доверимся жребию: орел — и мы поженимся, решка — и мы расстанемся навсегда.
+                                Монетка была подброшена. Она звякнула, завертелась и остановилась. Орел.
+                                Мы уставились на нее с недоумением.
+                                Затем, в один голос, мы сказали: «Может, еще разок?»
+                            <footer class="text-right">Джей Рип</footer></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">
+                            <a href="#panel-2" data-parent="#accordion" data-toggle="collapse">Вечерний сюрприз</a>
+                        </h1>
+                    </div>
+                    <div id="panel-2" class="panel-collapse collapse">
+                        <blockquote class="text-justify">Блестящие колготки туго и соблазнительно облегали прекрасные бедра — чудесное дополнение к легкому вечернему платью. От самых кончиков бриллиантовых сережек до носков изящных туфелек на тонких шпильках — все было просто шикарно. Глаза с только что наведенными тенями рассматривали отражение в зеркале, и накрашенные яркой красной помадой губы растягивались от удовольствия. Внезапно сзади послышался детский голос:
+                            «Папа?!»<footer class="text-right">Хиллари Клэй</footer></blockquote>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">
+                            <a href="#panel-3" data-parent="#accordion" data-toggle="collapse">Благодарность</a>
+                        </h1>
+                    </div>
+                    <div id="panel-3" class="panel-collapse collapse">
+                        <blockquote class="text-justify">Шерстяное одеяло, что ему недавно дали в благотворительном фонде, удобно обнимало его плечи, а ботинки, которые он сегодня нашел в мусорном баке, абсолютно не жали.
+                            Уличные огни так приятно согревали душу после всей этой холодящей темноты...
+                            Изгиб скамьи в парке казался таким знакомым его натруженной старой спине.
+                            «Спасибо тебе, Господи, — подумал он, — жизнь просто восхитительна!»
+                            <footer class="text-right">Эндрю Э. Хант</footer></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-1" data-backdrop="static">История</button>
+        </div>
+</div>
+
+  <div class="modal fade" id="modal-1" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">
+                      <i class="fa fa-close"></i>
+                  </button>
+                  <h2 class="modal-title">Прятки</h2>
+              </div>
+              <div class="modal-body">
+                  <blockquote class="text-justify">— Девяносто девять, сто! Кто не спрятался, я не виноват!
+                      Я ненавижу водить, но для меня это гораздо легче, чем прятаться. Входя в темную комнату, я шепчу тем, кто затаился внутри: «Стукали-пали!».
+                      Они взглядом провожают меня по длинному коридору, и в висящих на стенах зеркалах отражается моя фигура в черной сутане и с косой в руках.
+                      <footer class="text-right">Курт Хоман</footer></blockquote>
+              </div>
+              <div class="modal-footer">
+                  <p class="text-center"><button class="btn btn-success" type="button" data-dismiss="modal">Закрыть</button></p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<div class="container">
+    <div class="row">
        <h1>Название страницы</h1>
         <!-- Иконки BS и FA
         <p><i class="glyphicon glyphicon-home"></i></p>
@@ -100,9 +201,101 @@
         </span>
         <i class="fa fa-spinner fa-3x fa-pulse"></i>
         <i class="fa fa-spinner fa-3x fa-spin"></i>-->
+        <p>
+            <a href="#" class="btn btn-default"><i class="fa fa-spinner fa-pulse"></i></a>
+            <a href="#" class="btn btn-primary">Кнопка</a>
+            <a href="#" class="btn btn-info">Кнопка</a>
+            <a href="#" class="btn btn-success">Кнопка</a>
+            <a href="#" class="btn btn-warning">Кнопка</a>
+            <a href="#" class="btn btn-danger">Кнопкa</a>
+            <a href="#" class="btn btn-link">Кнопкa</a>
+        </p>
+        <p>
+            <a href="#" class="btn btn-success btn-lg">Кнопка</a>
+            <a href="#" class="btn btn-success">Кнопка</a>
+            <a href="#" class="btn btn-success btn-sm">Кнопка</a>
+            <a href="#" class="btn btn-success btn-xs">Кнопка</a>
+        </p>
+        <p>
+            <a href="#" class="btn btn-success btn-lg btn-block active">Кнопка</a>
+            <a href="#" class="btn btn-success btn-lg btn-block disabled">Кнопка</a>
+            <!--<button class="btn btn-danger btn-lg btn-block" type="submit">Опасность</button>
+            <input class="btn btn-danger btn-lg btn-block" type="submit" value="Опасность">-->
+        </p>
     </div>
 </div>
-<div class="container-fluid">
+
+<div class="container">
+    <div class="row">
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <a href="#" class="btn btn-danger"><i class="fa fa-random"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-camera-retro"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-bandcamp"></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-danger"><i class="fa fa-random"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-camera-retro"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-bandcamp"></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-danger"><i class="fa fa-random"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-camera-retro"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-bandcamp"></i></a>
+            </div>
+        </div>
+        <br>
+        <div class="btn-toolbar">
+            <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-danger"><i class="fa fa-random"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-camera-retro"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-bandcamp"></i></a>
+            </div>
+        </div>
+        <br>
+            <div class="btn-group btn-group-vertical">
+                <a href="#" class="btn btn-danger"><i class="fa fa-random"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-camera-retro"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-bandcamp"></i></a>
+            </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+            <div class="btn-group dropup pull-right">
+                <button class="btn btn-info">Выпадающее меню</button>
+                <button class="btn btn-info active dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Ссылка1</a></li>
+                    <li><a href="#">Ссылка2</a></li>
+                    <li><a href="#">Ссылка3</a></li>
+                    <li><a href="#">Ссылка4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--<div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
             <div class="row row2">
@@ -111,9 +304,9 @@
                 <div class="col-md-4"></div>
             </div>
         </div>
-        <div class="col-md-4 hidden-md visible-lg"></div>
+        <div class="col-md-6 hidden-md visible-lg"></div>
     </div>
-</div>
+</div>-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

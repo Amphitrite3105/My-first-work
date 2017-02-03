@@ -1,1 +1,12 @@
-
+#carousel{
+    margin-top: -20px;
+}
+a.spoiler:after{
+    content: " [-]";
+}
+a.spoiler.collapsed:after{
+    content: " [+]";
+}
+blockquote{
+    text-indent: 1.5em;
+}
