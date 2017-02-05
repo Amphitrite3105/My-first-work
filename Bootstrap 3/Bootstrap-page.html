@@ -47,6 +47,31 @@
                 <li><a href="#">Пункт3</a></li>
                 <li><a href="#">Пункт4</a></li>
             </ul>
+            <form action="" class="navbar-form navbar-right hidden-sm">
+                <div class="form-group">
+                    <input type="email" id="email" class="form-control hidden-xs" placeholder="Email" value="">
+            </div>
+                <div class="form-group">
+                    <input type="password" id="password" class="form-control" placeholder="Пароль" value="">
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <i class="fa fa-sign-in"></i> ВОЙТИ
+                </button>
+            </form>
+            <div class="navbar-form btn-group dropdown pull-right visible-sm">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sign-in"></i> ВОЙТИ</button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                        <form action="" class="navbar-form navbar-center">
+                        <div class="form-group pad">
+                            <input type="email" class="form-control email-xs" placeholder="Email" value="">
+                        </div>
+                        <div class="form-group pad">
+                            <input type="password" class="form-control password-xs" placeholder="Пароль" value="">
+                        </div>
+                        <p class="text-center"><button type="button" class="btn btn-primary">OK</button></p>
+                        </form>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -202,8 +227,22 @@
         <i class="fa fa-spinner fa-3x fa-pulse"></i>
         <i class="fa fa-spinner fa-3x fa-spin"></i>-->
         <p>
-            <a href="#" class="btn btn-default"><i class="fa fa-spinner fa-pulse"></i></a>
-            <a href="#" class="btn btn-primary">Кнопка</a>
+            <button type="button"
+                    class="btn btn-default"
+               data-placement="auto"
+               data-toggle="tooltip"
+               title="Подсказочка:)"
+               data-trigger="click">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </button>
+            <button type="button"
+                    class="btn btn-primary"
+                    data-toggle="popover"
+                    rel="popover"
+                    title="Заголовок окна"
+                    data-content="Текст оповещания"
+                    data-placement="top"
+                    data-trigger="hover">Кнопка</button>
             <a href="#" class="btn btn-info">Кнопка</a>
             <a href="#" class="btn btn-success">Кнопка</a>
             <a href="#" class="btn btn-warning">Кнопка</a>
@@ -279,7 +318,19 @@
         </div>
     </div>
 </div>
+    <br>
+    <br>
+    <br>
 
+<div class="container">
+    <div class="row">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped" style="min-width: 20%">
+                20%
+            </div>
+        </div>
+    </div>
+</div>
 <br>
 <br>
 <br>
@@ -311,5 +362,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+    <script src="js/myBsJs.js"></script>
 </body>
 </html>
