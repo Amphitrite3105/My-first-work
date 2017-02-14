@@ -1,6 +1,11 @@
 /**
- * Created by Nastya on 04.02.2017.
+ * Created by Nastya on 14.02.2017.
  */
+/* Слайдер */
+$('.carousel').carousel({
+    interval: 5000
+})
+
 /* Подсказки, всплывающие окна*/
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
@@ -11,11 +16,6 @@ $(document).ready(function(){
 $('#my-tabs a').click(function (e) {
     e.preventDefault()
     $(this).tab('show')
-})
-
-/* Слайдер */
-$('.carousel').carousel({
-    interval: 5000
 })
 
 /* Выравнивание колонок */

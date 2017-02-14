@@ -1,0 +1,39 @@
+@import url("../import/color.less");
+@import url("../import/mixins.less");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 16px;
+}
+
+.header_topline{
+  .background(@very_dark_grayish_blue);
+  padding: 15px 0;
+  .color();
+  a{
+    .color();
+  }
+}
+.top_links{
+  display: inline-block;
+  vertical-align: middle;
+  a{
+    .text-decoration(underline);
+    &:hover{
+      .text-decoration();
+    }
+  }
+}
+
+ .soc_buttons{
+   float: right;
+   a{
+     font-size: 24px;
+     margin-left: 8px;
+   }
+ }
