@@ -19,7 +19,6 @@ $('#tabs nav a').click(function (e) {
 })
 
 
-
 /* Выравнивание колонок */
 function setEqualHeight(columns)
 {
