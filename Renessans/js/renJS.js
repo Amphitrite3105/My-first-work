@@ -13,10 +13,12 @@ $(document).ready(function(){
 });
 
 /* Табы */
-$('#my-tabs a').click(function (e) {
+$('#tabs nav a').click(function (e) {
     e.preventDefault()
     $(this).tab('show')
 })
+
+
 
 /* Выравнивание колонок */
 function setEqualHeight(columns)
@@ -37,3 +39,4 @@ function setEqualHeight(columns)
 $(document).ready(function() {
     setEqualHeight($(".caption > div"));
 });
+
