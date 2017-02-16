@@ -11,6 +11,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/font-awesome.css" rel="stylesheet">
     <link href="../css/ren_header.css" rel="stylesheet">
+    <link href="../css/ren_content.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,17 +32,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+
                 <a class="navbar-brand" href="#"><strong>R</strong></a>
             </div>
 
             <div class="collapse navbar-collapse" id="responsive_menu">
                 <ul class="nav navbar-nav main_menu">
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Галерея</a></li>
                     <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Галерея</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-                <div class="navbar-form navbar-right soc_btn">
+                <div class="navbar-form navbar-right soc_btn hidden-xs">
                     <a class="one" href="#"><i class="fa fa-vk fa-2x"></i></a>
                     <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
                     <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
@@ -54,7 +56,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="tabs" class="tabs">
-                    <ul class="navigation">
+                    <ul class="navigation navigation-lg hidden-md hidden-sm hidden-xs">
                         <li class="active"><a href="#" class="icon-period"><span>Периоды</span></a></li>
                         <li><a href="#" class="icon-man"><span>Человек эпохи</span></a></li>
                         <li><a href="#" class="icon-science"><span>Наука</span></a></li>
@@ -64,8 +66,42 @@
                         <li><a href="#" class="icon-arch"><span>Архитектура</span></a></li>
                         <li><a href="#" class="icon-music"><span>Музыка</span></a></li>
                     </ul>
-                        <div class="content">
-                            <div  class="tabs__content active period-ren">
+
+                    <ul class="navigation navigation-md hidden-lg hidden-xs">
+                        <li class="active"><a href="#" class="icon-period"><span>Периоды</span></a></li>
+                        <li><a href="#" class="icon-man"><span>Человек эпохи</span></a></li>
+                        <li><a href="#" class="icon-science"><span>Наука</span></a></li>
+                        <li><a href="#" class="icon-phil"><span>Философия</span></a></li>
+                    </ul>
+                    <ul class="navigation navigation-md navigation-md-2 hidden-lg hidden-xs">
+                        <li><a href="#" class="icon-lit"><span>Литература</span></a></li>
+                        <li><a href="#" class="icon-art"><span>Изобразительное искусство</span></a></li>
+                        <li><a href="#" class="icon-arch"><span>Архитектура</span></a></li>
+                        <li><a href="#" class="icon-music"><span>Музыка</span></a></li>
+                    </ul>
+
+                    <div class="navigation navigation-xs hidden-lg hidden-md hidden-sm btn-group btn-group-vertical">
+                        <div class="btn-group btn-group-vertical">
+                            <a href="#" class="icon-period">Периоды</a>
+                            <a href="#" class="icon-man">Человек эпохи</a>
+                            <a href="#" class="icon-science">Наука </a>
+                            <a href="#" class="icon-phil"> Философия </a>
+                            <a href="#" class="icon-lit"> Литература </a>
+                            <a href="#" class="icon-art"> Изобразительное искусство</a>
+                            <a href="#" class="icon-arch"> Аритектура </a>
+                            <a href="#" class="icon-music"> Музыка </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content">
+                    <div  class="tabs__content active period-ren">
                                 <h3 class="text-center"><span>Возрождение</span> или <span>Ренессанс</span> - </h3>
                                 <p class="text-center">(фр. Renaissance, итал. Rinascimento; от re/ri — «снова» или «заново» + nasci — «рождённый»)</p>
                                 <a data-toggle="modal" href="#modal-1" data-backdrop="static">
@@ -123,7 +159,7 @@
                             <div  class="tabs__content"> Текст 6 </div>
                             <div  class="tabs__content"> Текст 7 </div>
                             <div  class="tabs__content"> Текст 8 </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,7 +177,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/renJS.js.js"></script>
+<script src="../js/renJS.js"></script>
 <script src="../js/tabs.js"></script>
 
 </body>
