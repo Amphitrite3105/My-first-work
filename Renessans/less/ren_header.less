@@ -12,6 +12,16 @@ body{
  color: @white;
 }
 
+
+/* Табы */
+.tabs__content{
+ display: none;
+}
+.tabs__content.active{
+ display: block;
+}
+
+
 @font-face {
  font-family: 'FontAwesome';
  font-weight: normal;
@@ -21,20 +31,22 @@ body{
 a:focus{
  outline: none;
 }
+
 /* Верхняя навицация */
 .navbar-collapse {
  .soc_btn a{
   color: white;
   margin-left: 10px;
   &:hover{
-   color: #666564;
+   color: lighten(desaturate(@content, 30%), 15%);
   }
  }
  .main_menu li a{
   color: white;
   font-size: 16px;
   &:hover{
-   background: #363533;
+   background: lighten(desaturate(@content, 30%), 15%);
+   color: black;
   }
  }
 }
@@ -92,30 +104,22 @@ a:focus{
  content: "\f001";
 }
 
-/* Табы */
-.tabs__content{
- display: none;
-}
-.tabs__content.active{
- display: block;
-}
-
 .tabs{
-  ul{
-   padding: 0;
-   margin: 0;
-   list-style: none;
-   width: 100%;
-   display: table;
-   li{
-    display: table-cell;
-    position: relative;
-    &:not(:last-child) {
-     border-right: 1px solid @very-dark-grey;
-    }
+ ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  display: table;
+  li{
+   display: table-cell;
+   position: relative;
+   &:not(:last-child) {
+    border-right: 1px solid rgba(250, 208, 110, 0.3);
    }
   }
  }
+}
 
 .tabs{
  a {
@@ -166,7 +170,7 @@ a:focus{
 }
 
 .navigation-md-2 li{
- border-top: 1px solid @very-dark-grey;
+ border-top: 1px solid rgba(250, 208, 110, 0.1);
 }
 
 
