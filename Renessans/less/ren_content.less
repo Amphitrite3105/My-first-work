@@ -6,7 +6,7 @@
   color: black;
 }
 .content{
-  height: 2000px;
+  height: auto;
   background: lighten(desaturate(@content, 30%), 15%);
   color: black;
   margin-top: 30px;
@@ -14,41 +14,103 @@
   box-shadow: 0px 0px 15px 10px rgba(32, 31, 29, 0.5);
   text-align: justify;
   text-indent: 3em;
+  p {
+    font-size: 18px;
+  }
+  .thumbnail{
+    width: auto;
+  }
+  /*img{
+    width: 100%;
+    height: auto;
+  }*/
 }
 
-.period-ren{
-  a{
+.period-ren {
+  a.min-img {
     float: right;
     padding: 0;
-    &:hover{
+    &:hover {
       background: rgba(250, 208, 110, 0.1);
       padding: 0;
     }
-    a img{
-      border: 0;
-      outline: 0;
-      text-decoration: none;
-    }
+
   }
-  span{
-    font-weight: bold;
-    font-style: italic;
-    font-size: 30px;
-  }
-  p{
-    font-size: 18px;
+  a img {
+    border: 0;
+    outline: 0;
+    text-decoration: none;
   }
 
-  table {
+}
+ .table table {
     border-collapse: separate;
     font-size: 18px;
-    width: 100%;
-    border: 1px solid black;
+    width: auto;
+   padding: 0px;
+   margin: 0px;
+   border-collapse: collapse;
   }
-}
+  .table table td:first-child {
+
+    text-align: left;
+  }
 
 footer{
   background: black;
   height: 200px;
   margin-top: 30px;
+}
+
+.info_links{
+  color: #000000;
+  font-weight: bold;
+  font-style: italic;
+  &:hover{
+    color: rgba(32, 31, 29, 0.6);
+  }
+}
+
+.part_name{
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.content .tabs__content h3.content_caption{
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  span {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 26px;
+  }
+}
+
+.fancybox-title {
+  visibility: hidden;
+  font: italic bold 16px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050;
+  text-align: center;
+}
+
+.response_img{
+  display: block;
+  width: 40%;
+  min-width: 250px;
+  height: auto;
+  float: right;
+  margin: 0 10px 10px 10px;
+}
+
+@media (max-width: 480px){
+.min_img{
+  width: auto;
+  max-width: 100%;
+  float: none;
+  margin: 10px auto;
+}
 }
