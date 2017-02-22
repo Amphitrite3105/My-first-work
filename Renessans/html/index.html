@@ -9,38 +9,55 @@
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-style.css" rel="stylesheet" type="text/css">
     <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="../css/ren_header.css" rel="stylesheet" type="text/css">
     <link href="../css/ren_content.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../libs/fancybox/jquery.fancybox.css" />
-    <script type="text/javascript" src="../js/jquery-1.3.2.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="../js/jquery.fancybox-1.2.1.pack.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("div.content a.gallery").fancybox();
-            $(".gallery").fancybox({
-                afterLoad: function() {
-                    this.title = '<a href="' + this.href + '"></a> ' + this.title;
-                },
-                helpers : {
-                    title: {
-                        type: 'inside'
-                    }
-                }
-            });
 
-        });
-    </script>
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="../libs/fancybox/lib/jquery-1.10.2.min.js"></script>
 
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="../libs/fancybox/lib/jquery.mousewheel.pack.js?v=3.1.3"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="../libs/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="../libs/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- Add Button helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="../libs/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <script type="text/javascript" src="../libs/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="../libs/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="../libs/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <!-- Add Media helper (this is optional) -->
+    <script type="text/javascript" src="../libs/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
     <![endif]-->
+
+    <script type="text/javascript">
+
+        $('.fancybox').fancybox();
+        $(".fancybox-img").fancybox({
+            wrapCSS    : 'fancybox-custom',
+            closeClick : true,
+
+            openEffect : 'none',
+
+            helpers : {
+                title : {
+                    type : 'inside'
+                }
+            }
+        });
+   </script>
 
 </head>
 <body>
@@ -90,18 +107,20 @@
                         <li><a href="#" class="icon-music"><span>Музыка</span></a></li>
                     </ul>
 
-                    <ul class="navigation navigation-md hidden-lg hidden-xs">
-                        <li class="active"><a href="#" class="icon-period"><span>Периоды</span></a></li>
-                        <li><a href="#" class="icon-man"><span>Человек эпохи</span></a></li>
-                        <li><a href="#" class="icon-science"><span>Наука</span></a></li>
-                        <li><a href="#" class="icon-phil"><span>Философия</span></a></li>
-                    </ul>
-                    <ul class="navigation navigation-md navigation-md-2 hidden-lg hidden-xs">
-                        <li><a href="#" class="icon-lit"><span>Литература</span></a></li>
-                        <li><a href="#" class="icon-art"><span>Изобразительное искусство</span></a></li>
-                        <li><a href="#" class="icon-arch"><span>Архитектура</span></a></li>
-                        <li><a href="#" class="icon-music"><span>Музыка</span></a></li>
-                    </ul>
+                    <table class="navigation navigation-md hidden-lg hidden-xs">
+                        <tr>
+                            <td class="active"><a href="#" class="icon-period"><span>Периоды</span></a></td>
+                            <td><a href="#" class="icon-man"><span>Человек эпохи</span></a></td>
+                            <td><a href="#" class="icon-science"><span>Наука</span></a></td>
+                            <td><a href="#" class="icon-phil"><span>Философия</span></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="icon-lit"><span>Литература</span></a></td>
+                            <td><a href="#" class="icon-art"><span>Изобразительное искусство</span></a></td>
+                            <td><a href="#" class="icon-arch"><span>Архитектура</span></a></td>
+                            <td><a href="#" class="icon-music"><span>Музыка</span></a></td>
+                        </tr>
+                    </table>
 
                     <div class="navigation navigation-xs hidden-lg hidden-md hidden-sm btn-group btn-group-vertical">
                         <div class="btn-group btn-group-vertical">
@@ -116,12 +135,19 @@
                         </div>
                     </div>
 
-                <div class="content">
-                    <div class="tabs__content active period-ren">
+                    <div class="content">
+                        <div class="tabs__content active period-ren">
                         <h3 class="content_caption">Возрождение <span>или</span> Ренессанс  - </h3>
                         <p class="text-center">(фр. Renaissance, итал. Rinascimento; от re/ri — «снова» или «заново» + nasci — «рождённый»)</p>
-                        <a class="gallery"  rel="group" title='Рафаель Санти "Aфинская школа". 1511' href="../images/raf.jpg"><img class="min_img" src="../images/raf.jpg" width="350" height="250" alt="Иллюстрация" align="right" vspace="10" hspace="10">
-                        </a>
+                            <div class = "col-sm-6 col-md-4 caption_img">
+                                <div class = "thumbnail">
+                                    <a class="fancybox-img"  data-fancybox-group="gallery" title='Рафаель Санти "Aфинская школа". 1511' href="../images/raf.jpg"><img class="min_img" src="../images/Raffael_afin_min.jpg"  width="500" height="550" alt="Иллюстрация">
+                                    </a>
+                                    <div class="caption">
+                                        <p>Рафаель Санти "Aфинская школа". 1511</p>
+                                    </div>
+                                </div>
+                            </div>
                         <p> имеющая мировое значение эпоха в истории культуры Европы, пришедшая на смену Средним векам и предшествующая Просвещению. Приходится — в Италии — на начало XIV века (повсеместно в Европе — с XV—XVI веков) — последнюю четверть XVI веков и в некоторых случаях — первые десятилетия XVII века. Отличительная черта эпохи Возрождения — светский характер культуры, её гуманизм и антропоцентризм (то есть интерес, в первую очередь, к человеку и его деятельности). Расцветает интерес к античной культуре, происходит как бы её «возрождение» — так и появился термин.
                             Термин Возрождение встречается уже у итальянских гуманистов, например, у Джорджо Вазари. В современном значении термин был введён в обиход французским историком XIX века Жюлем Мишле. В настоящее время термин Возрождение превратился в пример культурного расцвета.</p>
                         <p>Возрождение возникло в Италии, где первые его признаки были заметны ещё в XIII и XIV веках (в деятельности семейства Тони Парамони, Пизано, Джотто, Орканья и других), но оно твёрдо установилось только с 1420-х годов. Во Франции, Германии и других странах это движение началось значительно позже. К концу XV века оно достигло своего наивысшего расцвета. В XVI веке назревает кризис идей Возрождения, следствием чего является возникновение маньеризма и барокко.</p>
@@ -145,14 +171,13 @@
 
                         <div class="period_parts">
                             <h3>Проторенессанс</h3>
-                            <p>Проторенессанс тесно связан со средневековьем, собственно и появился в Позднем средневековьи, с византийскими, романскими и готическими традициями, этот период явился предтечей Возрождения. Он делится на два подпериода: до смерти <a href="#">Джотто ди Бондоне</a> и после (1337 год).
+                            <p>Проторенессанс тесно связан со средневековьем, собственно и появился в Позднем средневековьи, с византийскими, романскими и готическими традициями, этот период явился предтечей Возрождения. Он делится на два подпериода: до смерти <a class="fancybox" href="#jotto">Джотто ди Бондоне</a> и после (1337 год).
                                 Важнейшие открытия, ярчайшие мастера живут и работают в первый период. Второй отрезок связан с эпидемией чумы, обрушившейся на Италию. В конце XIII века во Флоренции возводится главное храмовое сооружение — собор <a href="#">Санта Мария дель Фьоре</a>, автором был <a href="#">Арнольфо ди Камбио</a>,
                                 затем работу продолжил Джотто, спроектировавший <a href="#">кампанилу Флорентийского собора</a>.Раньше всего искусство проторенессанса проявилось в скульптуре (<a href="#">Никколо</a> и <a href="#">Джованни Пизано</a>, <a href="#">Арнольфо ди Камбио</a>, <a href="#">Андреа Пизано</a>). Живопись представлена двумя художественными школами: Флоренции
                                 (<a href="#"> Чимабуэ </a>, <a href="#">Джотто</a>) и Сиены (<a href="#">Дуччо</a>, <a href="#">Симоне Мартини</a>).
                                 Центральной фигурой живописи стал Джотто. Художники Возрождения считали его реформатором живописи.
                                 Джотто наметил путь, по которому пошло её развитие: наполнение религиозных форм светским содержанием, постепенный переход от плоскостных изображений к объемным и рельефным, нарастание реалистичности, ввёл в живописи пластический объём фигур,
                                 изобразил в живописи интерьер.</p>
-
                             <h3>Раннее Возрождение</h3>
                             <p>Период так называемого «Раннего Возрождения» охватывает собой в Италии время с 1420 по 1500 года.
                                 В течение этих восьмидесяти лет искусство ещё не вполне отрешается от преданий недавнего прошлого (Средних веков),
@@ -183,8 +208,8 @@
                                 ощущение кризиса вылились во Флоренции в «нервное» искусство надуманных цветов и изломанных линий — <a href="#">маньеризм</a>. В Парму, где работал <a href="#">Корреджо</a>,
                                 маньеризм добрался только после смерти художника в 1534 году. У художественных традиций Венеции была собственная логика развития; до конца 1570-х годов
                                 там работали <a href="#">Тициан</a> и <a href="#">Палладио</a>,чьё творчество имело мало общего с кризисными явлениями в искусстве Флоренции и Рима.</p>
+                            </div>
                         </div>
-                    </div>
 
                             <div  class="tabs__content gymanizm">
                                 <h3 class="content_caption">Ренессансный гуманизм - </h3>
@@ -218,11 +243,30 @@
                             <div  class="tabs__content"> Текст 6 </div>
                             <div  class="tabs__content"> Текст 7 </div>
                             <div  class="tabs__content"> Текст 8 </div>
+
+
+                        <div id="jotto" class="info_block">
+                            <div class = "col-sm-6 col-md-5">
+                                <div class = "thumbnail">
+                                    <img src = "../images/Giotto_di_Bondone.jpg" alt = "Generic placeholder thumbnail">
+                                    <div class = "caption">
+                                        <h5><b>Портрет Джотто.</b></h5>
+                                        <p>Деталь картины «Пять основателей флорентийского искусства», конец XV — начало XVI вв.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="col-sm-6 col-md-7">
+                            <p><b>Джотто ди Бондоне</b> (итал. Giotto di Bondone) (Виккьо, июль 1266 — Флоренция 8 января 1337) — итальянский художник и архитектор, основоположник эпохи Проторенессанса. Одна из ключевых фигур в истории западного искусства. Преодолев византийскую иконописную традицию, стал подлинным основателем итальянской школы живописи,
+                                разработал абсолютно новый подход к изображению пространства. Работами Джотто вдохновлялись Леонардо да Винчи, Рафаэль, Микеланджело.</p>
+                            <p class="text-right"><a href="https://ru.wikipedia.org/wiki/Джотто_ди_Бондоне" class="btn btn-default">Продолжение <i class="fa fa-wikipedia-w"></i></a></p>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 <footer>
 
@@ -232,12 +276,10 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-<script src="../libs/fancybox/jquery.fancybox.pack.js"></script>
-<script src="../libs/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../js/bootstrap.min.js"></script>
+<script src="../libs/bootstrap/bootstrap.min.js"></script>
+<script src="../libs/bootstrap/myBsJs.js"></script>
 <script src="../js/renJS.js"></script>
 <script src="../js/tabs.js"></script>
 <script src="../js/jquery.ren.js"></script>

@@ -1,10 +1,6 @@
 @import url("../import/color.less");
 @import url("../import/mixins.less");
 
-
-#modal-1{
-  color: black;
-}
 .content{
   height: auto;
   background: lighten(desaturate(@content, 30%), 15%);
@@ -16,9 +12,6 @@
   text-indent: 3em;
   p {
     font-size: 18px;
-  }
-  .thumbnail{
-    width: auto;
   }
   /*img{
     width: 100%;
@@ -102,8 +95,7 @@ footer{
   width: 40%;
   min-width: 250px;
   height: auto;
-  float: right;
-  margin: 0 10px 10px 10px;
+  margin: 0;
 }
 
 @media (max-width: 480px){
@@ -111,6 +103,35 @@ footer{
   width: auto;
   max-width: 100%;
   float: none;
-  margin: 10px auto;
+  margin: 0;
 }
+}
+
+.info_block{
+  display: none;
+  width: 700px;
+  font-size: 18px;
+  text-align: justify;
+  text-indent: 3em;
+  padding: 10px 15px 0 0;
+  .caption{
+    font-size: 14px;
+    text-align: center;
+    text-indent: 0;
+  }
+}
+.caption_img{
+  padding-top: 20px;
+  .thumbnail{
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    font-size: 14px;
+    text-align: center;
+    text-indent: 0;
+    font-style: italic;
+  }
 }
